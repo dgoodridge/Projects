@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="fa620a5f-8e76-40bc-8711-c7b72979abc5" solutionId="fa620a5f-8e76-40bc-8711-c7b72979abc5" resetWebServer="false" sharePointProductVersion="15.0" name="MMTeamWebTemplate" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="b2caec2d-fbd7-4b66-ac71-a1891d10eaca" />
+    <featureReference itemId="6b30aef6-1f6a-43a1-adb0-c9649b7b851f" />
+    <featureReference itemId="2c1bd47a-8491-4031-91cc-a01325f46390" />
+    <featureReference itemId="84756c27-ab1c-46e6-8260-04395fb166ec" />
+  </features>
+</package>

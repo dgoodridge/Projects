@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WebTemplate BaseConfigurationID="0"
+               BaseTemplateID="1"
+               BaseTemplateName="STS"
+               Description="MyMARTA Team Site Template"
+               DisplayCategory="MyMARTA"
+               Name="MMTeamWebTemplate"
+               Title="Team Web Template">
+  </WebTemplate>
+</Elements>

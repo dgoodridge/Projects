@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="566bfbc4-bd44-494d-ac5b-2b0a7dffd900" solutionId="566bfbc4-bd44-494d-ac5b-2b0a7dffd900" resetWebServer="false" sharePointProductVersion="15.0" name="MMProcessWebTemplate" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="573a1840-2154-45a4-9a7f-7328b191ffba" />
+    <featureReference itemId="e8dd823f-6f56-4af0-b806-40b88ea79cb3" />
+    <featureReference itemId="702adae0-0413-4b45-8c71-b11c664e2349" />
+    <featureReference itemId="3ffc0255-dba3-4743-b401-98855e2fd8d8" />
+  </features>
+</package>

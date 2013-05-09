@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Additional News"
+                OnQuickLaunch="TRUE"
+                TemplateType="11003"
+                Url="Lists/Additional News"
+                Description="Additional Announcements List"></ListInstance>
+</Elements>

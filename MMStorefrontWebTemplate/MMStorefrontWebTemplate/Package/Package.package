@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="311344f8-6f8e-4a03-aaac-2b32bf265365" solutionId="311344f8-6f8e-4a03-aaac-2b32bf265365" resetWebServer="false" sharePointProductVersion="15.0" name="MMStorefrontWebTemplate" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="1b3f0f82-49f4-407d-8b51-19b02d838354" />
+    <featureReference itemId="c0725113-6cd5-46c7-abc2-b2148d661af1" />
+    <featureReference itemId="e737403c-9b2c-4e0b-8ef2-b538e21f58b2" />
+    <featureReference itemId="dffd73be-6a02-40bf-91af-b88e490370a6" />
+  </features>
+</package>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Roles and Responsibilities"
+                OnQuickLaunch="TRUE"
+                TemplateType="10003"
+                Url="Lists/Roles and Responsibilities"
+                Description="Roles and Responsibilities List"></ListInstance>
+</Elements>

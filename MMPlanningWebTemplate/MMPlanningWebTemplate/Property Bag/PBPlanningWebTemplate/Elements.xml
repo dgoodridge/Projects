@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <PropertyBag ParentType="Web">
+    <Property Name="MARTA.WebTemplateID"
+              Type="string"
+              Value="PlanningTemplate" />
+  </PropertyBag>
+</Elements>

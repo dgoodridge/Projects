@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Department-Wide News"
+                OnQuickLaunch="TRUE"
+                TemplateType="11002"
+                Url="Lists/Department-Wide News"
+                Description="Department-Wide Announcements List"></ListInstance>
+</Elements>

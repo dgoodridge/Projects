@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B0517B3-A87E-46A9-B7B3-3CD3E8AB6F5A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MMStorefrontWebTemplate</RootNamespace>
+    <AssemblyName>MMStorefrontWebTemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <PostDeploymentCommand>xcopy /y "%24%28TargetDir%29MMStorefrontWebTemplate.wsp" "C:\Users\Administrator\Documents\Visual Studio 2012\Projects\Solutions"</PostDeploymentCommand>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\Web-EnsureSiteScopedFeatures\Web-EnsureSiteScopedFeatures.EventReceiver.cs">
+      <DependentUpon>Web-EnsureSiteScopedFeatures.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Farm-StorefrontWebTemplateFeature\Farm-StorefrontWebTemplateFeature.feature">
+      <FeatureId>{1b3f0f82-49f4-407d-8b51-19b02d838354}</FeatureId>
+    </None>
+    <None Include="Features\Web-SitePagesFeature\Web-SitePagesFeature.feature">
+      <FeatureId>{dffd73be-6a02-40bf-91af-b88e490370a6}</FeatureId>
+    </None>
+    <None Include="Features\Web-ListsFeature\Web-ListsFeature.feature">
+      <FeatureId>{e737403c-9b2c-4e0b-8ef2-b538e21f58b2}</FeatureId>
+    </None>
+    <None Include="Features\Web-EnsureSiteScopedFeatures\Web-EnsureSiteScopedFeatures.feature">
+      <FeatureId>{c0725113-6cd5-46c7-abc2-b2148d661af1}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Lists\Additional News\Additional News Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1fc686a5-75ed-4199-ae87-26312f02a4c1}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Additional News\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0489c9cf-2181-4a5b-a7ac-421667221553}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Authority-Wide News\Authority-Wide News Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8134dd75-dc00-4676-9c2b-e0d25fa3a3f7}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Authority-Wide News\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a3f68326-cdbc-4354-8695-888e44855021}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Department-Wide News\Department-Wide News Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bb92f717-4975-4134-b88d-1e22e0c93b1d}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Department-Wide News\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a8590c10-5cd3-4c2f-9859-115bac6d671b}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Site Change Log\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c935b4b3-332c-4222-909b-262cba87e68b}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Site Change Log\Site Change Log Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a2790ca0-a4f1-41b6-83ef-047fd0fa4fc1}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Slideshow Pictures\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2392cfae-0971-4d5b-8ef4-f607529772fc}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Home\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1419d0d8-6753-49c7-b730-f75c4f2b5dbc}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Logo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{374ee88b-30b5-457e-8481-ba20f37d228b}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Theme\MARTAblue.spcolor" />
+    <None Include="Modules\Theme\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5f640ee6-889f-43e5-b6b1-df349d19ff43}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{311344f8-6f8e-4a03-aaac-2b32bf265365}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="MMStorefrontWebTemplate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{23922c83-73a2-45e8-a59d-2e37d4cb2241}</SharePointProjectItemId>
+    </None>
+    <None Include="Property Bag\PBStorefrontWebTemplate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{370d85c6-e3d1-45bb-b8e4-6457af6ba290}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\Farm-StorefrontWebTemplateFeature\Farm-StorefrontWebTemplateFeature.Template.xml">
+      <DependentUpon>Farm-StorefrontWebTemplateFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Web-SitePagesFeature\Web-SitePagesFeature.Template.xml">
+      <DependentUpon>Web-SitePagesFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Web-ListsFeature\Web-ListsFeature.Template.xml">
+      <DependentUpon>Web-ListsFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Web-EnsureSiteScopedFeatures\Web-EnsureSiteScopedFeatures.Template.xml">
+      <DependentUpon>Web-EnsureSiteScopedFeatures.feature</DependentUpon>
+    </Content>
+    <Content Include="Lists\Additional News\Additional News Instance\Elements.xml" />
+    <Content Include="Lists\Additional News\Elements.xml" />
+    <Content Include="Lists\Additional News\Schema.xml" />
+    <Content Include="Lists\Authority-Wide News\Authority-Wide News Instance\Elements.xml" />
+    <Content Include="Lists\Authority-Wide News\Elements.xml" />
+    <Content Include="Lists\Authority-Wide News\Schema.xml" />
+    <Content Include="Lists\Department-Wide News\Department-Wide News Instance\Elements.xml" />
+    <Content Include="Lists\Department-Wide News\Elements.xml" />
+    <Content Include="Lists\Department-Wide News\Schema.xml" />
+    <Content Include="Lists\Site Change Log\Elements.xml" />
+    <Content Include="Lists\Site Change Log\Schema.xml" />
+    <Content Include="Lists\Site Change Log\Site Change Log Instance\Elements.xml" />
+    <Content Include="Lists\Slideshow Pictures\Elements.xml" />
+    <Content Include="MMStorefrontWebTemplate\Elements.xml" />
+    <Content Include="MMStorefrontWebTemplate\ONET.xml" />
+    <Content Include="Modules\Home\default.aspx" />
+    <Content Include="Modules\Home\Elements.xml" />
+    <Content Include="Modules\Logo\Department.png" />
+    <Content Include="Modules\Logo\Elements.xml" />
+    <Content Include="Modules\Theme\Elements.xml" />
+    <Content Include="Property Bag\PBStorefrontWebTemplate\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

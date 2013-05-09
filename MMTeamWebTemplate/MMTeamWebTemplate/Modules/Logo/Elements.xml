@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Logo"
+          Url="SiteCollectionImages">
+    <File Path="Logo\Team.png" 
+          Url="Team.png"
+          Type="GhostableInLibrary"
+          IgnoreIfAlreadyExists="TRUE"/>
+  </Module>
+</Elements>

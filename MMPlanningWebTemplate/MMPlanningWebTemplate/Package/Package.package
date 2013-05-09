@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3b3497cb-09ea-4260-9d0f-caf2fe4b676f" solutionId="3b3497cb-09ea-4260-9d0f-caf2fe4b676f" resetWebServer="false" sharePointProductVersion="15.0" name="MMPlanningWebTemplate" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="54d12431-c3b8-4ae1-8cca-142e51b598bf" />
+    <featureReference itemId="1aea9f4f-a54f-4005-84d4-17ebba43b9a8" />
+    <featureReference itemId="c78902d7-9737-4631-bc58-d708209ab19f" />
+    <featureReference itemId="9da4efa7-9516-4251-8586-67e04e629c19" />
+  </features>
+</package>

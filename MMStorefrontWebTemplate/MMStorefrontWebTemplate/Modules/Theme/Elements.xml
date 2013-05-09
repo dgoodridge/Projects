@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Theme"
+          Url="_catalogs/theme/15">
+    <File Path="Theme\MARTAblue.spcolor"
+          Url="MARTAblue.spcolor"
+          Type="GhostableInLibrary"
+          IgnoreIfAlreadyExists="TRUE" />
+  </Module>
+</Elements>

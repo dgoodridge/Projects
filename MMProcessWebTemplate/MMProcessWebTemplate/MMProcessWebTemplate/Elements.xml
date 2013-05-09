@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WebTemplate BaseConfigurationID="0"
+               BaseTemplateID="1"
+               BaseTemplateName="STS"
+               Description="MyMARTA Process Site Template"
+               DisplayCategory="MyMARTA"
+               Name="MMProcessWebTemplate"
+               Title="Process Web Template">
+  </WebTemplate>
+</Elements>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Title="$Resources:onet_TeamWebSite;"
+         Revision="3"
+         xmlns:ows="Microsoft SharePoint"
+         UIVersion="15"
+         HideSiteContentsLink="false">
+
+  <ListTemplates>
+  </ListTemplates>
+  <DocumentTemplates>
+  </DocumentTemplates>
+  <Configurations>
+    <Configuration ID="0"
+                   Name="Default"
+                   MasterUrl="_catalogs/masterpage/seattle.master">
+      <Lists>
+      </Lists>
+      <SiteFeatures>
+        <!--Site Scoped Features are activated in Web-EnsureSiteScopedFeatures Feature-->
+        <!-- Activating SharePoint Server Publishing Infrastructure-->
+        <Feature ID="f6924d36-2fa8-4f0b-b16d-06b7250180fa" />
+        <!--Publishing Pre-requisites-->
+        <Feature ID="a392da98-270b-4e85-9769-04c0fde267aa" />
+      </SiteFeatures>
+      <WebFeatures>
+        <!--Template Specific Features-->
+        <!-- Custom Site collection scoped feature activation -->
+        <Feature ID="e48eafc5-18e1-4dd7-bfb9-41d6077f4c94" />
+        <!--Web-Lists Feature-->
+        <Feature ID="b2c1513c-c636-402f-b382-9c357a0c6706" />
+        <!--Web-SitePages Feature-->
+        <Feature ID="4b72b7f3-2330-4abb-88b5-4196c0e45b84" />
+
+        <!--Publishing Features-->
+        <!--Publishing-->
+        <Feature ID="22a9ef51-737b-4ff2-9346-694633fe4416" />
+        <!--PublishingWeb-->
+        <Feature ID="94c94ca6-b32f-4da9-a9e3-1f3d343d7ecb" />
+        <!--MetaData Nav-->
+        <Feature ID="7201d6a4-a5d3-49a1-8c19-19c4bac6e668" />
+        
+        <!--Web UI Features-->
+        <!--Access App-->
+        <Feature ID="d2b9ec23-526b-42c5-87b6-852bd83e0364" />
+        <!--Following Content-->
+        <Feature ID="a7a2793e-67cd-4dc1-9fd0-43f61581207a" />
+        <!--Minimal Download Strategy-->
+        <Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" />
+        <!--Mobile Browser View-->
+        <Feature ID="d95c97f3-e528-4da2-ae9f-32b3535fbb59" />
+        <!--SPS Enterprise Site Features-->
+        <Feature ID="0806d127-06e6-447a-980e-2e90b03101b8" />
+        <!--SPS Standard Site Features-->
+        <Feature ID="99fe402e-89a0-45aa-9163-85342e865dc8" />
+        <!--Team Collaboration Lists-->
+        <Feature ID="00bfea71-4ea5-48d4-a4ad-7ea5c011abe5" />
+        <!--Workflow Task Content Type-->
+        <Feature ID="57311b7a-9afd-4ff0-866e-9393ad6647b1" />
+
+        <!--Web Hidden Features-->
+        <!--AnnouncementsList-->
+        <Feature ID="00bfea71-d1ce-42de-9c63-a44004ce0104" />
+        <!--BizAppsListTemplates-->
+        <Feature ID="065c78be-5231-477e-a972-14177cc5b3c7" />
+        <!--ContactsList-->
+        <Feature ID="00bfea71-7e6d-4186-9ba8-c047ac750105" />
+        <!--CustomList-->
+        <Feature ID="00bfea71-de22-43b2-a848-c05709900100" />
+        <!--DataConnectionLibrary-->
+        <Feature ID="00bfea71-dbd7-4f72-b8cb-da7ac0440130" />
+        <!--DataSourceLibrary-->
+        <Feature ID="00bfea71-f381-423d-b9d1-da7a54c50110" />
+        <!--DiscussionsList-->
+        <Feature ID="00bfea71-6a49-43fa-b535-d15c05500108" />
+        <!--DocumentLibrary-->
+        <Feature ID="00bfea71-e717-4e80-aa17-d0c71b360101" />
+        <!--EventsList-->
+        <Feature ID="00bfea71-ec85-4903-972d-ebe475780106" />
+        <!--ExternalList-->
+        <Feature ID="00bfea71-9549-43f8-b978-e47e54a10600" />
+        <!--GanttTasksList-->
+        <Feature ID="00bfea71-513d-4ca0-96c2-6a47775c0119" />
+        <!--GettingStarted-->
+        <Feature ID="4aec7207-0d02-4f4f-aa07-b370199cd0c7" />
+        <!--GridList-->
+        <Feature ID="00bfea71-3a1d-41d3-a0ee-651d11570120" />
+        <!--HierarchyTasksList-->
+        <Feature ID="f9ce21f8-f437-4f7e-8bc6-946378c850f0" />
+        <!--IPFSWebFeatures-->
+        <Feature ID="a0e5a010-1329-49d4-9e09-f280cdbed37d" />
+        <!--IssuesList-->
+        <Feature ID="00bfea71-5932-4f9c-ad71-1557e5751100" />
+        <!--LinksList-->
+        <Feature ID="00bfea71-2062-426c-90bf-714c59600103" />
+        <!--MobilityRedirect-->
+        <Feature ID="f41cc668-37e5-4743-b4a8-74d1db3fd8a4" />
+        <!--NoCodeWorkflowLibrary-->
+        <Feature ID="00bfea71-f600-43f6-a895-40c0de7b0117" />
+        <!--PictureLibrary-->
+        <Feature ID="00bfea71-52d4-45b3-b544-b1c71b620109" />
+        <!--PromotedLinksList-->
+        <Feature ID="192efa95-e50c-475e-87ab-361cede5dd7f" />
+        <!--ReportListTemplate-->
+        <Feature ID="2510d73f-7109-4ccc-8a1c-314894deeb3a" />
+        <!--SiteFeedController-->
+        <Feature ID="5153156a-63af-4fac-b557-91bd8c315432" />
+        <!--SurveysList-->
+        <Feature ID="00bfea71-eb8a-40b1-80c7-506be7590102" />
+        <!--TaskListNewsFeed-->
+        <Feature ID="ff13819a-a9ac-46fb-8163-9d53357ef98d" />
+        <!--TasksList-->
+        <Feature ID="00bfea71-a83e-497e-9ba0-7a5c597d0107" />
+        <!--WebPageLibrary-->
+        <Feature ID="00bfea71-c796-4402-9f2f-0eb9a6e71b18" />
+        <!--WorkflowHistoryList-->
+        <Feature ID="00bfea71-4ea5-48d4-a4ad-305cf7030140" />
+        <!--workflowProcessList-->
+        <Feature ID="00bfea71-2d77-4a75-9fca-76516689e21a" />
+        <!--WorkflowServiceStore-->
+        <Feature ID="2c63df2b-ceab-42c6-aeff-b3968162d4b1" />
+        <!--XmlFormLibrary-->
+        <Feature ID="00bfea71-1e1d-4562-b56a-f05371bb0115" />
+      </WebFeatures>
+    </Configuration>
+  </Configurations>
+</Project>

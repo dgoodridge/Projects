@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE48FB24-5847-4FC1-91B4-0FEBC7946678}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MMProcessWebTemplate</RootNamespace>
+    <AssemblyName>MMProcessWebTemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <PostDeploymentCommand>xcopy /y "%24%28TargetDir%29MMProcessWebTemplate.wsp" "C:\Users\Administrator\Documents\Visual Studio 2012\Projects\Solutions"</PostDeploymentCommand>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\Web-EnsureSiteSCopedFeatures\Web-EnsureSiteSCopedFeatures.EventReceiver.cs">
+      <DependentUpon>Web-EnsureSiteSCopedFeatures.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Farm-ProcessWebTemplateFeature\Farm-ProcessWebTemplateFeature.feature">
+      <FeatureId>{573a1840-2154-45a4-9a7f-7328b191ffba}</FeatureId>
+    </None>
+    <None Include="Features\Web-SitePagesFeature\Web-SitePagesFeature.feature">
+      <FeatureId>{3ffc0255-dba3-4743-b401-98855e2fd8d8}</FeatureId>
+    </None>
+    <None Include="Features\Web-ListsFeature\Web-ListsFeature.feature">
+      <FeatureId>{702adae0-0413-4b45-8c71-b11c664e2349}</FeatureId>
+    </None>
+    <None Include="Features\Web-EnsureSiteSCopedFeatures\Web-EnsureSiteSCopedFeatures.feature">
+      <FeatureId>{e8dd823f-6f56-4af0-b806-40b88ea79cb3}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Lists\Diagram Library\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b22bea4f-5581-4ddf-90b9-aea7a2978f77}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Roles and Responsibilities\Roles and Responsibilities Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{23851216-86fb-49e7-bc24-8ba024335cf4}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Roles and Responsibilities\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1524f15b-83c8-4c24-9d7b-fe9a93e46777}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Site Change Log\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{421ef07f-2f08-4451-866e-01cd9f349702}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Site Change Log\Site Change Log Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{48fdffa4-9596-46e7-b8a0-056ac1c6f3b6}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Tasks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b1e1fbb5-d6d3-423d-a553-a92c3bbe790e}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Tasks\TasksInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{00976dcc-1218-4406-8a1c-7be971a399c3}</SharePointProjectItemId>
+    </None>
+    <None Include="MMProcessWebTemplate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d746f0c9-c1bb-4861-a513-f56098be9505}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Diagrams\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5719ba6a-c147-4d79-95d8-057ef5f203d8}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Home\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f55b9ace-73bf-4d26-9a6b-58a3eff6880a}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Logo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ed684729-1169-4a94-bd58-c680d27cda7b}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Metrics\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6c2845cc-8bae-421e-937e-04011d03af60}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Theme\MARTAblue.spcolor" />
+    <None Include="Modules\Theme\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{86297f45-900e-416b-a7a1-445af829ce9c}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{566bfbc4-bd44-494d-ac5b-2b0a7dffd900}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Property Bag\PBProcessWebTemplate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{59eedc49-ab18-44fe-a85e-004f12e22bfc}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\Farm-ProcessWebTemplateFeature\Farm-ProcessWebTemplateFeature.Template.xml">
+      <DependentUpon>Farm-ProcessWebTemplateFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Web-SitePagesFeature\Web-SitePagesFeature.Template.xml">
+      <DependentUpon>Web-SitePagesFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Web-ListsFeature\Web-ListsFeature.Template.xml">
+      <DependentUpon>Web-ListsFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Web-EnsureSiteSCopedFeatures\Web-EnsureSiteSCopedFeatures.Template.xml">
+      <DependentUpon>Web-EnsureSiteSCopedFeatures.feature</DependentUpon>
+    </Content>
+    <Content Include="Lists\Diagram Library\Elements.xml" />
+    <Content Include="Lists\Roles and Responsibilities\Elements.xml" />
+    <Content Include="Lists\Roles and Responsibilities\Roles and Responsibilities Instance\Elements.xml" />
+    <Content Include="Lists\Roles and Responsibilities\Schema.xml" />
+    <Content Include="Lists\Site Change Log\Elements.xml" />
+    <Content Include="Lists\Site Change Log\Schema.xml" />
+    <Content Include="Lists\Site Change Log\Site Change Log Instance\Elements.xml" />
+    <Content Include="Lists\Tasks\Elements.xml" />
+    <Content Include="Lists\Tasks\Schema.xml" />
+    <Content Include="Lists\Tasks\TasksInstance\Elements.xml" />
+    <Content Include="MMProcessWebTemplate\Elements.xml" />
+    <Content Include="MMProcessWebTemplate\ONET.xml" />
+    <Content Include="Modules\Diagrams\Diagrams.aspx" />
+    <Content Include="Modules\Diagrams\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Home\default.aspx" />
+    <Content Include="Modules\Home\Elements.xml" />
+    <Content Include="Modules\Logo\Elements.xml" />
+    <Content Include="Modules\Logo\Process.png" />
+    <Content Include="Modules\Metrics\Elements.xml" />
+    <Content Include="Modules\Metrics\Metrics.aspx" />
+    <Content Include="Modules\Theme\Elements.xml" />
+    <Content Include="Modules\Theme\Sample.txt" />
+    <Content Include="Property Bag\PBProcessWebTemplate\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

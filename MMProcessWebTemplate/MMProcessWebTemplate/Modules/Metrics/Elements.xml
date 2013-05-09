@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Metrics"
+          Path="Metrics"
+          Url="">
+    <File Url="Metrics.aspx"
+          IgnoreIfAlreadyExists="true">
+      <Property Name="PageTitle"
+                Value="Metrics" />
+    </File>
+  </Module>
+</Elements>
