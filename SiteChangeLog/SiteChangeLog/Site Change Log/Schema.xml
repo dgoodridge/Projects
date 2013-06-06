@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Site Change Log" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Site Change Log" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100213a8e2a66944b8bb32844c2309e91f0" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{1aa51194-4dd2-4e81-8516-7b6a011aa067}" Name="Action" /><FieldRef ID="{52578FC3-1F01-4f4d-B016-94CCBCF428CF}" Name="_Comments" /><FieldRef ID="{1f169b32-9b07-430a-8cea-b871a6c6ee02}" Name="RequestedBy" /><FieldRef ID="{375fccba-0a5d-40f4-847b-6996e7896605}" Name="ChangesAppliedBy" /></FieldRefs></ContentType><ContentType ID="0x01008526730596BA4688B950ACC8B02664C4" Name="SiteChangeLog" Group="Custom Content Types" Description="My Content Type" Inherits="FALSE" Version="0"><FieldRefs><FieldRef ID="{1aa51194-4dd2-4e81-8516-7b6a011aa067}" DisplayName="Action" Required="TRUE" Name="Action" /><FieldRef ID="{52578FC3-1F01-4f4d-B016-94CCBCF428CF}" DisplayName="$Resources:core,Comments;" Description="$Resources:core,_CommentsDesc;" Name="_Comments" Sealed="TRUE" ShowInFileDlg="FALSE" Sortable="FALSE" /><FieldRef ID="{1f169b32-9b07-430a-8cea-b871a6c6ee02}" DisplayName="Requested By" Required="TRUE" Name="RequestedBy" /><FieldRef ID="{375fccba-0a5d-40f4-847b-6996e7896605}" DisplayName="Changes Applied By" Required="TRUE" Name="ChangesAppliedBy" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Item Changed" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{1aa51194-4dd2-4e81-8516-7b6a011aa067}" Name="Action" DisplayName="Action" Type="Choice" Required="TRUE" Group="MARTA Site Columns"><CHOICES><CHOICE>Created</CHOICE><CHOICE>Modified</CHOICE><CHOICE>Deleted</CHOICE></CHOICES></Field><Field ID="{52578FC3-1F01-4f4d-B016-94CCBCF428CF}" Name="_Comments" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_Comments" Group="$Resources:core,Document_Columns;" Type="Note" DisplayName="$Resources:core,Comments;" Sortable="FALSE" Description="$Resources:core,_CommentsDesc;" Sealed="TRUE" UnlimitedLengthInDocumentLibrary="TRUE" AllowDeletion="TRUE" ShowInFileDlg="FALSE" /><Field ID="{1f169b32-9b07-430a-8cea-b871a6c6ee02}" Name="RequestedBy" DisplayName="Requested By" Type="User" Required="TRUE" Group="MARTA Site Columns"></Field><Field ID="{375fccba-0a5d-40f4-847b-6996e7896605}" Name="ChangesAppliedBy" DisplayName="Changes Applied By" Type="User" Required="TRUE" Group="MARTA Site Columns"></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Action" /><FieldRef Name="_Comments" /><FieldRef Name="RequestedBy" /><FieldRef Name="ChangesAppliedBy" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

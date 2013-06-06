@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{1f169b32-9b07-430a-8cea-b871a6c6ee02}"
+       Name="RequestedBy"
+       DisplayName="Requested By"
+       Type="User"
+       Required="TRUE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

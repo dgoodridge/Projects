@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01008526730596BA4688B950ACC8B02664C4" Name="SiteChangeLog" Group="Custom Content Types" Description="My Content Type" Inherits="FALSE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{1aa51194-4dd2-4e81-8516-7b6a011aa067}" DisplayName="Action" Required="TRUE" Name="Action" />
+      <FieldRef ID="{52578FC3-1F01-4f4d-B016-94CCBCF428CF}" DisplayName="$Resources:core,Comments;" Description="$Resources:core,_CommentsDesc;" Name="_Comments" Sealed="TRUE" ShowInFileDlg="FALSE" Sortable="FALSE" />
+      <FieldRef ID="{1f169b32-9b07-430a-8cea-b871a6c6ee02}" DisplayName="Requested By" Required="TRUE" Name="RequestedBy" />
+      <FieldRef ID="{375fccba-0a5d-40f4-847b-6996e7896605}" DisplayName="Changes Applied By" Required="TRUE" Name="ChangesAppliedBy" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

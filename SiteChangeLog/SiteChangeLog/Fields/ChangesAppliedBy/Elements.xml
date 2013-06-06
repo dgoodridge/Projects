@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{375fccba-0a5d-40f4-847b-6996e7896605}"
+       Name="ChangesAppliedBy"
+       DisplayName="Changes Applied By"
+       Type="User"
+       Required="TRUE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

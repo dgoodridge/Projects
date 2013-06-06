@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{1aa51194-4dd2-4e81-8516-7b6a011aa067}"
+       Name="Action"
+       DisplayName="Action"
+       Type="Choice"
+       Required="TRUE"
+       Group="MARTA Site Columns">
+    <CHOICES>
+      <CHOICE>Created</CHOICE>
+      <CHOICE>Modified</CHOICE>
+      <CHOICE>Deleted</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

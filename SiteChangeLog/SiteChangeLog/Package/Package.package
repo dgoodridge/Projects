@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d0fdfd89-6811-49c6-8719-42aea16bb9b0" solutionId="d0fdfd89-6811-49c6-8719-42aea16bb9b0" resetWebServer="false" sharePointProductVersion="15.0" name="SiteChangeLog" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="abf61084-58b6-499b-bcea-e92a1b0b3d40" />
+    <featureReference itemId="86b4dd75-1029-4cb5-9f0b-db959b09c150" />
+  </features>
+</package>
