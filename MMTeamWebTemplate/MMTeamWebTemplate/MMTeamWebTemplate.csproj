@@ -85,18 +85,6 @@
     <None Include="Lists\Documents\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{902d14db-ac0f-45e9-ad2d-9ba1b55e9e37}</SharePointProjectItemId>
     </None>
-    <None Include="Lists\Site Change Log\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{ccd0029e-3ca0-44d0-a52c-fef47edd6756}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\Site Change Log\Site Change Log Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{58925240-af83-4c22-b3e0-7934a00ada8a}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\Tasks\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{cac5b4c4-0122-4828-8f12-5058fc8f1f87}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\Tasks\TasksInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{858961e7-6a29-4671-a542-30955e7feb2e}</SharePointProjectItemId>
-    </None>
     <None Include="MMTeamWebTemplate\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{4909507f-8573-403b-9265-228f6bbceecb}</SharePointProjectItemId>
     </None>
@@ -145,14 +133,10 @@
     <Content Include="Lists\Contacts\Elements.xml" />
     <Content Include="Lists\Contacts\Schema.xml" />
     <Content Include="Lists\Documents\Elements.xml" />
-    <Content Include="Lists\Site Change Log\Elements.xml" />
-    <Content Include="Lists\Site Change Log\Schema.xml" />
-    <Content Include="Lists\Site Change Log\Site Change Log Instance\Elements.xml" />
-    <Content Include="Lists\Tasks\Elements.xml" />
-    <Content Include="Lists\Tasks\Schema.xml" />
-    <Content Include="Lists\Tasks\TasksInstance\Elements.xml" />
     <Content Include="MMTeamWebTemplate\Elements.xml" />
-    <Content Include="MMTeamWebTemplate\ONET.xml" />
+    <Content Include="MMTeamWebTemplate\ONET.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Modules\Home\Elements.xml">
       <SubType>Designer</SubType>
     </Content>

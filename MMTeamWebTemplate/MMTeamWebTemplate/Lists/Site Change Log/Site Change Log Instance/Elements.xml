@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Site Change Log"
-                OnQuickLaunch="TRUE"
-                TemplateType="10101"
-                Url="Lists/Site Change Log"
-                Description="Site Change Log"></ListInstance>
-</Elements>

@@ -30,6 +30,10 @@
         <Feature ID="b2c1513c-c636-402f-b382-9c357a0c6706" />
         <!--Web-SitePages Feature-->
         <Feature ID="4b72b7f3-2330-4abb-88b5-4196c0e45b84" />
+        <!--Site Change Log Feature-->
+        <Feature ID="572d286e-5738-42f3-801c-d645b5823ea8" />
+        <!--MARTA Task Feature-->
+        
 
         <!--Publishing Features-->
         <!--Publishing-->
