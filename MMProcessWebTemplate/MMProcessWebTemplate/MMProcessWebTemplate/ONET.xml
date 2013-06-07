@@ -30,6 +30,8 @@
         <Feature ID="36b1dad9-94e9-4174-95e5-293af9a69afb" />
         <!--Web-SitePages Feature-->
         <Feature ID="24a00fdf-817c-4e30-b6bc-ffa24ef35a06" />
+        <!--Site Change Log Feature-->
+        <Feature ID="572d286e-5738-42f3-801c-d645b5823ea8" />
 
         <!--MetaData Nav-->
         <Feature ID="7201d6a4-a5d3-49a1-8c19-19c4bac6e668" />

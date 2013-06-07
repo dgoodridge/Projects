@@ -27,6 +27,8 @@ namespace MMProcessWebTemplate.Features.Web_EnsureSiteSCopedFeatures
             if (web != null)
             {
                 List<Guid> siteFeatures = new List<Guid>();
+                siteFeatures.Add(new Guid("6a6c734d-2f80-41f6-b006-eb0942bbef35"));
+
                 siteFeatures.Add(new Guid("c85e5759-f323-4efb-b548-443d2216efb5"));
                 siteFeatures.Add(new Guid("3bae86a2-776d-499d-9db8-fa4cdc7884f8"));
                 siteFeatures.Add(new Guid("063c26fa-3ccc-4180-8a84-b6f98e991df3"));
