@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Proposed Changes"
-                OnQuickLaunch="TRUE"
-                TemplateType="10102"
-                Url="Lists/Proposed Changes"
-                Description="Proposed Changes List"></ListInstance>
-</Elements>

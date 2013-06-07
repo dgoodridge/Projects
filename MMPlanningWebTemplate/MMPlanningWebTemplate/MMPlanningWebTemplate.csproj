@@ -74,12 +74,6 @@
     <None Include="Lists\Documents\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{330f8cf8-5a01-440a-93cb-6d498cedd712}</SharePointProjectItemId>
     </None>
-    <None Include="Lists\Proposed Changes\Proposed Changes Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{e8271f47-8251-496e-815f-8548f83ec5b6}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\Proposed Changes\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{945bafe0-8f2d-4130-9c96-85945cc9d1be}</SharePointProjectItemId>
-    </None>
     <None Include="MMPlanningWebTemplate\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{14ca06b7-bdd5-48fc-9946-ca89faf2d3b3}</SharePointProjectItemId>
     </None>
@@ -111,9 +105,6 @@
       <DependentUpon>Web-EnsureSiteScopedFeatures.feature</DependentUpon>
     </Content>
     <Content Include="Lists\Documents\Elements.xml" />
-    <Content Include="Lists\Proposed Changes\Elements.xml" />
-    <Content Include="Lists\Proposed Changes\Proposed Changes Instance\Elements.xml" />
-    <Content Include="Lists\Proposed Changes\Schema.xml" />
     <Content Include="MMPlanningWebTemplate\Elements.xml" />
     <Content Include="MMPlanningWebTemplate\ONET.xml" />
     <Content Include="Modules\Home Page\default.aspx" />
