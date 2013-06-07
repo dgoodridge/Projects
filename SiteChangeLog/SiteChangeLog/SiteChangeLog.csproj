@@ -54,11 +54,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Features\CustomFields\CustomFields.feature">
+    <None Include="Features\SiteChangeLog\SiteChangeLog.feature">
       <FeatureId>{abf61084-58b6-499b-bcea-e92a1b0b3d40}</FeatureId>
-    </None>
-    <None Include="Features\List\List.feature">
-      <FeatureId>{86b4dd75-1029-4cb5-9f0b-db959b09c150}</FeatureId>
     </None>
     <None Include="Fields\Action\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7f7bd3b5-087b-4a6d-ab32-4069b418fea4}</SharePointProjectItemId>
@@ -88,11 +85,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Features\CustomFields\CustomFields.Template.xml">
-      <DependentUpon>CustomFields.feature</DependentUpon>
-    </Content>
-    <Content Include="Features\List\List.Template.xml">
-      <DependentUpon>List.feature</DependentUpon>
+    <Content Include="Features\SiteChangeLog\SiteChangeLog.Template.xml">
+      <DependentUpon>SiteChangeLog.feature</DependentUpon>
     </Content>
     <Content Include="Fields\Action\Elements.xml" />
     <Content Include="Fields\ChangesAppliedBy\Elements.xml" />
