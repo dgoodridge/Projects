@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{4f007078-33cf-4252-b768-68d285b3422b}"
+       Name="ApprovedBy"
+       DisplayName="Approved By"
+       Type="User"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

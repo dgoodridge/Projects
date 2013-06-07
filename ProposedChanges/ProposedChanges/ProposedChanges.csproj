@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBA8A363-D26F-4B84-ADBA-695F0F77F3BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProposedChanges</RootNamespace>
+    <AssemblyName>ProposedChanges</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\ProposedChanges\ProposedChanges.feature">
+      <FeatureId>{d3252aed-f70e-460b-bc98-9352161a6666}</FeatureId>
+    </None>
+    <None Include="Fields\ApprovedBy\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d7337d20-16ed-48ee-89a3-bb0be0497cd0}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Approved\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fafde344-aa93-4f23-a7cc-3fe9ccc55191}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\ImplementationDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b8bc6e8d-1723-42a7-81af-47ae654d4310}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\RequestedBy\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ab85f3b4-c9ea-4964-9795-cb3497823b0b}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{b5c2c83f-5fd4-4325-b4b2-8a3a548009e1}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Proposed Changes\Proposed Changes Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b7b7d4e2-3f9a-497c-8b45-9092557c1d75}</SharePointProjectItemId>
+    </None>
+    <None Include="Proposed Changes\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fbb16ab4-23ea-43d1-95d3-803616bfc3ea}</SharePointProjectItemId>
+    </None>
+    <None Include="ProposedChanges\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{398fa6c6-768f-4152-ba34-690dd79841d3}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\ProposedChanges\ProposedChanges.Template.xml">
+      <DependentUpon>ProposedChanges.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\ApprovedBy\Elements.xml" />
+    <Content Include="Fields\Approved\Elements.xml" />
+    <Content Include="Fields\ImplementationDate\Elements.xml" />
+    <Content Include="Fields\RequestedBy\Elements.xml" />
+    <Content Include="Proposed Changes\Elements.xml" />
+    <Content Include="Proposed Changes\Proposed Changes Instance\Elements.xml" />
+    <Content Include="Proposed Changes\Schema.xml" />
+    <Content Include="ProposedChanges\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
