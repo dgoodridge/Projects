@@ -34,6 +34,8 @@
         <Feature ID="303d2c6e-cf1c-4a0f-82ae-2bcf7f8a7bde" />
         <!--Web-SitePages Feature-->
         <Feature ID="90747f72-0468-46a3-a063-cf3337f956d1" />
+        <!--MARTA News-->
+        <Feature ID="1232313b-c949-4361-8a01-b2693eafebc2" />
 
         <!--MetaData Nav-->
         <Feature ID="7201d6a4-a5d3-49a1-8c19-19c4bac6e668" />

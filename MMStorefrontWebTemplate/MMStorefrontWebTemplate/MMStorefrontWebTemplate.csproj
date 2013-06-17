@@ -71,30 +71,6 @@
       <FeatureId>{c0725113-6cd5-46c7-abc2-b2148d661af1}</FeatureId>
     </None>
     <None Include="key.snk" />
-    <None Include="Lists\Additional News\Additional News Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{1fc686a5-75ed-4199-ae87-26312f02a4c1}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\Additional News\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{0489c9cf-2181-4a5b-a7ac-421667221553}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\Authority-Wide News\Authority-Wide News Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{8134dd75-dc00-4676-9c2b-e0d25fa3a3f7}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\Authority-Wide News\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{a3f68326-cdbc-4354-8695-888e44855021}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\Department-Wide News\Department-Wide News Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{bb92f717-4975-4134-b88d-1e22e0c93b1d}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\Department-Wide News\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{a8590c10-5cd3-4c2f-9859-115bac6d671b}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\Site Change Log\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{c935b4b3-332c-4222-909b-262cba87e68b}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\Site Change Log\Site Change Log Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{a2790ca0-a4f1-41b6-83ef-047fd0fa4fc1}</SharePointProjectItemId>
-    </None>
     <None Include="Lists\Slideshow Pictures\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{2392cfae-0971-4d5b-8ef4-f607529772fc}</SharePointProjectItemId>
     </None>
@@ -135,18 +111,6 @@
     <Content Include="Features\Web-EnsureSiteScopedFeatures\Web-EnsureSiteScopedFeatures.Template.xml">
       <DependentUpon>Web-EnsureSiteScopedFeatures.feature</DependentUpon>
     </Content>
-    <Content Include="Lists\Additional News\Additional News Instance\Elements.xml" />
-    <Content Include="Lists\Additional News\Elements.xml" />
-    <Content Include="Lists\Additional News\Schema.xml" />
-    <Content Include="Lists\Authority-Wide News\Authority-Wide News Instance\Elements.xml" />
-    <Content Include="Lists\Authority-Wide News\Elements.xml" />
-    <Content Include="Lists\Authority-Wide News\Schema.xml" />
-    <Content Include="Lists\Department-Wide News\Department-Wide News Instance\Elements.xml" />
-    <Content Include="Lists\Department-Wide News\Elements.xml" />
-    <Content Include="Lists\Department-Wide News\Schema.xml" />
-    <Content Include="Lists\Site Change Log\Elements.xml" />
-    <Content Include="Lists\Site Change Log\Schema.xml" />
-    <Content Include="Lists\Site Change Log\Site Change Log Instance\Elements.xml" />
     <Content Include="Lists\Slideshow Pictures\Elements.xml" />
     <Content Include="MMStorefrontWebTemplate\Elements.xml" />
     <Content Include="MMStorefrontWebTemplate\ONET.xml" />
