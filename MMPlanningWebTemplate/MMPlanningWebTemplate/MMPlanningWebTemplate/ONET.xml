@@ -34,6 +34,8 @@
         <Feature ID="48cc5ee3-3980-4307-b725-0da0c1030818" />
         <!--Web-SitePages Feature-->
         <Feature ID="95ac538f-437a-4dd1-9650-296311bf611e" />
+        <!--Proposed Changes List-->
+        <Feature ID="b384a25d-a371-4710-9ccb-d61e26f32725" />
 
         <!--MetaData Nav-->
         <Feature ID="7201d6a4-a5d3-49a1-8c19-19c4bac6e668" />
