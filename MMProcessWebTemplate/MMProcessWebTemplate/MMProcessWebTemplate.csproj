@@ -74,12 +74,6 @@
     <None Include="Lists\Diagram Library\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{b22bea4f-5581-4ddf-90b9-aea7a2978f77}</SharePointProjectItemId>
     </None>
-    <None Include="Lists\Roles and Responsibilities\Roles and Responsibilities Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{23851216-86fb-49e7-bc24-8ba024335cf4}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\Roles and Responsibilities\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{1524f15b-83c8-4c24-9d7b-fe9a93e46777}</SharePointProjectItemId>
-    </None>
     <None Include="MMProcessWebTemplate\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{d746f0c9-c1bb-4861-a513-f56098be9505}</SharePointProjectItemId>
     </None>
@@ -124,9 +118,6 @@
       <DependentUpon>Web-EnsureSiteSCopedFeatures.feature</DependentUpon>
     </Content>
     <Content Include="Lists\Diagram Library\Elements.xml" />
-    <Content Include="Lists\Roles and Responsibilities\Elements.xml" />
-    <Content Include="Lists\Roles and Responsibilities\Roles and Responsibilities Instance\Elements.xml" />
-    <Content Include="Lists\Roles and Responsibilities\Schema.xml" />
     <Content Include="MMProcessWebTemplate\Elements.xml" />
     <Content Include="MMProcessWebTemplate\ONET.xml" />
     <Content Include="Modules\Diagrams\Diagrams.aspx" />
