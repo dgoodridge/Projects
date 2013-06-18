@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="Logo"
-          Url="SiteCollectionImages">
+          Url="SiteCollectionImages"
+          RootWebOnly="TRUE" >
     <File Path="Logo\Team.png" 
           Url="Team.png"
           Type="GhostableInLibrary"
