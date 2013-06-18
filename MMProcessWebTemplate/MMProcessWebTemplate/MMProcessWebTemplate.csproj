@@ -131,7 +131,6 @@
     <Content Include="Modules\Metrics\Elements.xml" />
     <Content Include="Modules\Metrics\Metrics.aspx" />
     <Content Include="Modules\Theme\Elements.xml" />
-    <Content Include="Modules\Theme\Sample.txt" />
     <Content Include="Property Bag\PBProcessWebTemplate\Elements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
