@@ -65,10 +65,7 @@
       <SharePointProjectItemId>{fafde344-aa93-4f23-a7cc-3fe9ccc55191}</SharePointProjectItemId>
     </None>
     <None Include="Fields\ImplementationDate\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b8bc6e8d-1723-42a7-81af-47ae654d4310}</SharePointProjectItemId>
-    </None>
-    <None Include="Fields\RequestedBy\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{ab85f3b4-c9ea-4964-9795-cb3497823b0b}</SharePointProjectItemId>
+      <SharePointProjectItemId>{8fb28f3f-59d4-43df-b950-ecc2f7a3278c}</SharePointProjectItemId>
     </None>
     <None Include="key.snk" />
     <None Include="Package\Package.package">
@@ -95,7 +92,6 @@
     <Content Include="Fields\ApprovedBy\Elements.xml" />
     <Content Include="Fields\Approved\Elements.xml" />
     <Content Include="Fields\ImplementationDate\Elements.xml" />
-    <Content Include="Fields\RequestedBy\Elements.xml" />
     <Content Include="Proposed Changes\Elements.xml" />
     <Content Include="Proposed Changes\Proposed Changes Instance\Elements.xml" />
     <Content Include="Proposed Changes\Schema.xml" />

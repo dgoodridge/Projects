@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
   <Field
-       ID="{fc4b086c-f134-44b8-b0b5-2f9dd36eb513}"
+       ID="{40cd51d2-5791-4049-bad7-981ad9a81082}"
        Name="ImplementationDate"
        DisplayName="Implementation Date"
-       Type="Date"
+       Type="DateTime"
+       Format="DateOnly"
        Required="FALSE"
        Group="MARTA Site Columns">
   </Field>

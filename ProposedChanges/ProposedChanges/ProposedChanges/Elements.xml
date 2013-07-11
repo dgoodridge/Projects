@@ -3,11 +3,11 @@
   <!-- Parent ContentType: Item (0x01) -->
   <ContentType ID="0x0100BDB88E9D5044477FAD5AC580E24E92F8" Name="ProposedChanges" Group="MyMARTA Content Types" Description="My Content Type" Inherits="FALSE" Version="0">
     <FieldRefs>
-      <FieldRef ID="{271d1d3d-78b6-4064-a8c4-d2315906af4b}" DisplayName="Requested By" Required="TRUE" Name="RequestedBy" />
+      <FieldRef ID="{1f169b32-9b07-430a-8cea-b871a6c6ee02}" DisplayName="Requested By" Required="TRUE" Name="RequestedBy" />
       <FieldRef ID="{52578FC3-1F01-4f4d-B016-94CCBCF428CF}" DisplayName="$Resources:core,Comments;" Description="$Resources:core,_CommentsDesc;" Name="_Comments" Sealed="TRUE" ShowInFileDlg="FALSE" Sortable="FALSE" />
       <FieldRef ID="{7f45ff3b-4d5d-427b-aabf-daea61df5a2c}" DisplayName="Approved" Required="FALSE" Name="Approved" />
       <FieldRef ID="{4f007078-33cf-4252-b768-68d285b3422b}" DisplayName="Approved By" Required="FALSE" Name="ApprovedBy" />
-      <FieldRef ID="{fc4b086c-f134-44b8-b0b5-2f9dd36eb513}" DisplayName="Implementation Date" Required="FALSE" Name="ImplementationDate" />
+      <FieldRef ID="{40cd51d2-5791-4049-bad7-981ad9a81082}" DisplayName="Implementation Date" Required="FALSE" Name="ImplementationDate" Format="DateOnly" />
     </FieldRefs>
   </ContentType>
 </Elements>
