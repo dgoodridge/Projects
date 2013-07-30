@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Task (0x0108) -->
+  <ContentType ID="0x010800B321FDFDD22D4762B2A7D4F2DA039A4C" Name="MARTATask" Group="MyMARTA Content Types" Description="Content Type to handle MARTA Tasks" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{e781ba64-aded-4af1-aac5-abc307f23f20}" DisplayName="Manager" Required="FALSE" Name="Manager" />
+      <FieldRef ID="{634af387-eb97-40ed-b2d0-ed5bc3591998}" DisplayName="Is Delegated" Name="Is_x0020_Delegated" />
+      <FieldRef ID="{0385e071-24da-46d8-a48b-737735f53d89}" DisplayName="Original Assignee" Required="FALSE" Name="Original_x0020_Assignee" />
+      <FieldRef ID="{b093ebda-99e4-492e-b80b-d31b54aac290}" DisplayName="Delegation Type" Required="FALSE" Name="Delegation_x0020_Type" Format="Dropdown" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

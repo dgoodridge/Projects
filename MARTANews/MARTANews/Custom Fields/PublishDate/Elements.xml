@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{598f93c8-b71a-499a-9be9-79fbdcf542eb}"
+       Name="PublishDate"
+       DisplayName="Publish Date"
+       Type="DateTime"
+       Required="True"
+       Group="MARTA Site Columns">
+    <Default>[today]</Default>
+  </Field>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Announcement (0x0104) -->
+  <ContentType ID="0x010400E63E6179F12546BEAE926B0ADECB9829" Name="MARTANews" Group="MARTA Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" DisplayName="$Resources:core,Title;" Name="LinkTitleNoMenu" ReadOnly="TRUE" />
+      <FieldRef ID="{598f93c8-b71a-499a-9be9-79fbdcf542eb}" DisplayName="Publish Date" Required="True" Name="PublishDate" />
+      <FieldRef ID="{71316CEA-40A0-49f3-8659-F0CEFDBDBD4F}" DisplayName="$Resources:cmscore,column_articlestartdate_displayname;" Required="FALSE" Description="$Resources:cmscore,column_articlestartdate_description;" Name="ArticleStartDate" Format="DateOnly" Sealed="TRUE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

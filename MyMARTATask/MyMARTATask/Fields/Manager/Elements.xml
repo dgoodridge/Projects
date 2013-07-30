@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{8f8261d5-5bc2-4716-85f4-edf24ebcb1a5}"
+       Name="Manager"
+       DisplayName="Manager"
+       Type="User"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{57cd0d68-45fd-429d-9d28-1f53b78602c2}"
+       Name="OriginalAssignee"
+       DisplayName="Original Assignee"
+       Type="User"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

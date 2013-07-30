@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{404AF95A-27E9-4832-A835-628A143DFF4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MARTANews</RootNamespace>
+    <AssemblyName>MARTANews</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <PostDeploymentCommand>xcopy /y "%24%28TargetDir%29MARTANews.wsp" "C:\Users\Administrator\Documents\Visual Studio 2012\Projects\Solutions"</PostDeploymentCommand>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Custom Fields\PublishDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{959fa5b1-a184-413f-8e11-41fa77f2418f}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\MARTANews\MARTANews.feature">
+      <FeatureId>{6e096077-bb34-44b9-a34a-e1c492fb668d}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="MARTA News\MARTA News Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0863244c-30b3-4cce-8568-a5cddf9db5b5}</SharePointProjectItemId>
+    </None>
+    <None Include="MARTA News\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{81cf8bc8-44a9-4b41-8011-c0d3af01c6e2}</SharePointProjectItemId>
+    </None>
+    <None Include="MARTANews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{83a83528-d552-40fb-91d8-8276bf000488}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{83f96281-4fd5-4739-86d6-6f1c2e465971}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Custom Fields\PublishDate\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Features\MARTANews\MARTANews.Template.xml">
+      <DependentUpon>MARTANews.feature</DependentUpon>
+    </Content>
+    <Content Include="MARTA News\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="MARTA News\MARTA News Instance\Elements.xml" />
+    <Content Include="MARTA News\Schema.xml" />
+    <Content Include="MARTANews\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
