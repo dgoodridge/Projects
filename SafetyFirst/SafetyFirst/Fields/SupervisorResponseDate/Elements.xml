@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{a15d65b5-6654-4c8b-a2d8-7d220afd8f10}"
+       Name="SupervisorResponseDate"
+       DisplayName="Supervisor Response Date"
+       Type="DateTime"
+       Hidden="TRUE"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

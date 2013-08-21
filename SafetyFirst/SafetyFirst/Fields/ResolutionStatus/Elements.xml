@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d750a7d1-02f8-42dc-b9e4-1a910bbb9504}"
+       Name="ResolutionStatus"
+       DisplayName="Resolution Status"
+       Type="Choice"
+       Required="TRUE"
+       Group="MARTA Site Columns">
+    <Default>Open</Default>
+    <CHOICES>
+      <CHOICE>Open</CHOICE>
+      <CHOICE>On-Hold</CHOICE>
+      <CHOICE>Closed</CHOICE>
+      <CHOICE>Denied</CHOICE>
+      <CHOICE>Appealed - Open</CHOICE>
+      <CHOICE>Appealed - Closed</CHOICE>
+      <CHOICE>Appealed - Denied</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

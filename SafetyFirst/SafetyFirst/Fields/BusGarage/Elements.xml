@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{a6bf7656-4d04-4026-b165-674f7fd8c0fe}"
+       Name="BusGarage"
+       DisplayName="Bus Garage"
+       Type="Choice"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+    <CHOICES>
+      <CHOICE>Brownsmill</CHOICE>
+      <CHOICE>Hamilton</CHOICE>
+      <CHOICE>Perry</CHOICE>
+      <CHOICE>Brady</CHOICE>
+      <CHOICE>Laredo</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

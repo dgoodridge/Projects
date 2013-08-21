@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{ff767187-c3ea-46e9-973a-9797659f2b58}"
+       Name="LVEReferenced"
+       DisplayName="Location, Vehicle and/or Equipment Referenced"
+       Description="Vehicle, Equipment or location of hazard related to the incident being reported"
+       Type="Text"
+       Required="TRUE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

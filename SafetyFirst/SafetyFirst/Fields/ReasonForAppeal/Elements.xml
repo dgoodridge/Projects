@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{250a837a-d568-4e40-935c-d5c1c0374bdd}"
+       Name="ReasonForAppeal"
+       DisplayName="Reason for Appeal"
+       Type="Note"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

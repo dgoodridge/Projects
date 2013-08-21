@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="NewForm"
+          Url="SiteAssets">
+    <File Path="NewForm\NewSafety1stForm.aspx"
+          Url="NewSafety1stForm.aspx"
+          Type="GhostableInLibrary"/>
+    <File Path="NewForm\NewSafety1stForm.aspx" Url="NewForm/NewSafety1stForm.aspx" />
+  </Module>
+</Elements>

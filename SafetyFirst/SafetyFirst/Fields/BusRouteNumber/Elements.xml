@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c6a44cb1-742c-4632-8d1a-912784ecf175}"
+       Name="BusRouteNumber"
+       DisplayName="Bus Route Number"
+       Type="Number"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

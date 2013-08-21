@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010036B9690730774E8C8F36C59BD19589E8" Name="SafetyFirst" Group="MyMARTA Content Types" Description="Safety First form content type" Inherits="FALSE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{d5bf6694-4581-40c1-bb06-009617502869}" DisplayName="Incident Reporting Date" Required="TRUE" Name="IncidentReportingDate" />
+      <FieldRef ID="{869d6d9d-53af-4dd6-bf0f-d52ba36649d2}" DisplayName="Incident Occurrence Date" Required="TRUE" Name="IncidentOccurrenceDate" />
+      <FieldRef ID="{8dc66793-e123-43b2-93c2-720484f2bd3b}" DisplayName="Anonymous Reporting" Required="FALSE" Name="AnonymousReporting" />
+      <FieldRef ID="{a7b4f66a-0b2d-463e-8b5d-fdc522150cc5}" DisplayName="Is Appeal" Required="FALSE" Description="Do you wish to appeal this decision?" Name="IsAppeal" ShowInNewForm="FALSE" />
+      <FieldRef ID="{250a837a-d568-4e40-935c-d5c1c0374bdd}" DisplayName="Reason for Appeal" Required="FALSE" Name="ReasonForAppeal" ShowInNewForm="FALSE" />
+      <FieldRef ID="{fd83098a-41da-4d0c-a834-59867b1a7038}" DisplayName="Logged By" Required="TRUE" Description="Name of Person Safety 1st Report Logged by" Name="LoggedBy" />
+      <FieldRef ID="{c4e0f350-52cc-4ede-904c-dd71a3d11f7d}" DisplayName="$Resources:core,Job_Title;" Name="JobTitle" />
+      <FieldRef ID="{C814B2CF-84C6-4f56-B4A4-C766938A97C5}" DisplayName="$Resources:core,Department_OL;" Name="ol_Department" Sealed="TRUE" />
+      <FieldRef ID="{62e70810-a2a1-4fdd-a5e5-297db3c1dcf0}" DisplayName="Division/Work Location" Required="FALSE" Name="Division" />
+      <FieldRef ID="{43fc20bf-ddb9-4328-90fb-8a548cb1ea30}" DisplayName="Phone Number" Required="TRUE" Name="PhoneNumber" />
+      <FieldRef ID="{2a464df1-44c1-4851-949d-fcd270f0ccf2}" DisplayName="$Resources:core,Mobile_Phone;" Name="CellPhone" />
+      <FieldRef ID="{fce16b4c-fe53-4793-aaab-b4892e736d15}" DisplayName="$Resources:core,E-Mail;" Name="EMail" ReadOnly="FALSE" />
+      <FieldRef ID="{97fdab70-1c3a-4dc7-9cdc-7168ee4a64bf}" DisplayName="Bus Number" Required="FALSE" Name="BusNumber" />
+      <FieldRef ID="{c6a44cb1-742c-4632-8d1a-912784ecf175}" DisplayName="Bus Route Number" Required="FALSE" Name="BusRouteNumber" />
+      <FieldRef ID="{a6bf7656-4d04-4026-b165-674f7fd8c0fe}" DisplayName="Bus Garage" Required="FALSE" Name="BusGarage" />
+      <FieldRef ID="{ff767187-c3ea-46e9-973a-9797659f2b58}" DisplayName="Location, Vehicle and/or Equipment Referenced" Required="TRUE" Description="Vehicle, Equipment or location of hazard related to the incident being reported" Name="LVEReferenced" />
+      <FieldRef ID="{87ac1157-ecd6-4f49-b0a0-4afe71398c8a}" DisplayName="Hazard Description" Required="TRUE" Description="Description of the unsafe condition or hazardous work practice" Name="HazardDescription" />
+      <FieldRef ID="{56752662-5ffd-4a75-a636-58e13cbcf337}" DisplayName="Employee Recommended Changes" Required="FALSE" Name="EmployeeRecChanges" />
+      <FieldRef ID="{d750a7d1-02f8-42dc-b9e4-1a910bbb9504}" DisplayName="Resolution Status" Required="TRUE" Name="ResolutionStatus" ShowInNewForm="FALSE" />
+      <FieldRef ID="{edc5e9a1-5d27-4598-abd8-42a7a2851613}" DisplayName="Resolution Status Modified By" Required="FALSE" Name="ResolutionStatusModifiedBy" ShowInNewForm="FALSE" />
+      <FieldRef ID="{d0ed5a92-01ec-482a-9774-fd5ea023c6c8}" DisplayName="Supervisor" Required="TRUE" Name="Supervisor" />
+      <FieldRef ID="{8d66fe41-939b-41de-b43f-54ff72afb2fb}" DisplayName="Supervisor Recommended Changes" Required="FALSE" Name="SupervisorRecChanges" ShowInNewForm="FALSE" />
+      <FieldRef ID="{8cd97cdf-8ccd-49f2-bac0-432ea4b33392}" DisplayName="Supervisor/Employee Initial Contact" Required="FALSE" Description="Checking this box indicates that you, the supervisor, have contacted the employee that submitted this report" Name="InitialContact" ShowInNewForm="FALSE" />
+      <FieldRef ID="{bdb75c53-ae9c-4739-8f29-cdaee63f0ee2}" DisplayName="Resolution Complete Discussion" Required="FALSE" Description="Checking this box indicates that you, the supervisor, have discussed the resolution of this report with the submitter" Name="ResolutionCompleteDiscussion" ShowInNewForm="FALSE" />
+      <FieldRef ID="{5f9db875-e43b-4450-b4b2-292d350f6179}" DisplayName="Director" Required="TRUE" Name="Director" />
+      <FieldRef ID="{5247ee85-cca0-4d5a-a53e-e5008cc3d4fc}" DisplayName="Director Recommended Changes" Required="FALSE" Name="DirectorRecChanges" ShowInNewForm="FALSE" />
+      <FieldRef ID="{26e105b9-f873-461e-955c-04e60848b9b7}" DisplayName="AGM" Required="TRUE" Name="AGM" />
+      <FieldRef ID="{484f654b-2184-4d3e-964e-72e66e0830bd}" DisplayName="AGM Recommended Changes" Required="FALSE" Name="AGMRecChanges" ShowInNewForm="FALSE" />
+      <FieldRef ID="{db726a88-f6ce-4ec4-ad6b-d643f81b0a38}" DisplayName="Delegated Resource" Required="FALSE" Description="Name of individual the report is being redirected to" Name="DelegatedResource" ShowInNewForm="FALSE" />
+      <FieldRef ID="{46ce2ece-2155-43bb-ac5a-a084dce5fe95}" DisplayName="Delegated Resource Recommended Changes" Required="FALSE" Name="DelegatedRecChanges" ShowInNewForm="FALSE" />
+      <FieldRef ID="{26001828-968e-4589-90b7-b0603611b082}" DisplayName="Pre-HIRA Code" Required="FALSE" Name="PreHIRACode" ShowInNewForm="FALSE" />
+      <FieldRef ID="{9ec3747f-831b-433e-988c-db8d681188b1}" DisplayName="Post-HIRA Code" Required="FALSE" Name="PostHIRACode" ShowInNewForm="FALSE" />
+      <FieldRef ID="{e213720c-b8bd-48d7-aa1d-ba57ba663f5c}" DisplayName="Initial Contact Date" Required="FALSE" Hidden="TRUE" Name="InitialContactDate" />
+      <FieldRef ID="{a15d65b5-6654-4c8b-a2d8-7d220afd8f10}" DisplayName="Supervisor Response Date" Required="FALSE" Hidden="TRUE" Name="SupervisorResponseDate" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

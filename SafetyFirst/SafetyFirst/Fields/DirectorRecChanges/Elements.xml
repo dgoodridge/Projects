@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{5247ee85-cca0-4d5a-a53e-e5008cc3d4fc}"
+       Name="DirectorRecChanges"
+       DisplayName="Director Recommended Changes"
+       Type="Note"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

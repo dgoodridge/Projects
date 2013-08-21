@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{62e70810-a2a1-4fdd-a5e5-297db3c1dcf0}"
+       Name="Division"
+       DisplayName="Division/Work Location"
+       Type="Choice"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+    <CHOICES>
+      <CHOICE>Operations</CHOICE>
+      <CHOICE>Administration</CHOICE>
+      <CHOICE>Engineering and Technology</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

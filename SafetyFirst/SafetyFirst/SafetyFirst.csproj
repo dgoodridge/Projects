@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C560F3A1-EFC1-40A7-816D-D07B6A8DB92D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SafetyFirst</RootNamespace>
+    <AssemblyName>SafetyFirst</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <PostDeploymentCommand>xcopy /y "%24%28TargetDir%29SafetyFirst.wsp" "C:\Users\Administrator\Documents\Visual Studio 2012\Projects\Solutions"</PostDeploymentCommand>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modules\NewForm\NewSafety1stForm.aspx.cs">
+      <DependentUpon>NewSafety1stForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\EditForm\EditSafety1stForm.aspx.cs">
+      <DependentUpon>EditSafety1stForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Modules\EditForm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e364e7dc-bf4e-4a25-84f1-a409cbef3db6}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\SafetyFirstFeature\SafetyFirstFeature.feature">
+      <FeatureId>{ecc2e2fd-726f-4f63-9ff4-7e7e69365cc3}</FeatureId>
+    </None>
+    <None Include="Fields\AGMRecChanges\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{52f6d789-5300-4996-a6d0-20e1869c6616}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\AGM\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3f8de45d-1230-495e-bef9-f9e0b4f1cbd9}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\AnonymousReporting\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{de41ecbb-4e16-4c0d-857e-fcf55a24e51b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\BusGarage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b2357e02-85c4-4e84-96ee-67a6bce07340}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\BusNumber\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{817c376d-b430-4a80-b83d-d24bab92c6fd}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\BusRouteNumber\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6dd52211-3727-4e47-982a-1703d7f2125c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\DelegatedRecChanges\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{66c1bbdb-d740-4f7f-91b1-c44847717bda}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\DelegatedResource\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5293bdbf-1ff1-46c9-b2c2-43ae86ff7ddd}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\DirectorRecChanges\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{73d982b0-9e64-4bac-98d6-77bd19c42c51}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Director\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{937929c2-9dfe-4a40-bafd-c57f3a6c5411}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Division\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fdc35ab6-3be6-4848-b28e-b451a20ad692}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\EmployeeRecChanges\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e0fdcba2-a8c1-41b0-a16e-91d29b04a424}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\HazardDescription\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{02e4e139-c1a4-4d07-b077-a40b7768fff0}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\IncidentOccurrenceDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f486bb69-047e-4a18-816f-01ad4420d5f7}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\IncidentReportingDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e2865120-410a-4772-b170-f1d0bbfa6f6b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\InitialContactDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{db9ac4ea-a895-4312-80b7-121329597c4b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\InitialContact\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c2088a75-faa5-4783-90da-8c210aca9f4e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\IsAppeal\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{14328d31-052b-44a9-9f5d-ca6f2218db75}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\LoggedBy\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8fc665ec-bb1f-49c7-aa45-f952074c630a}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\LVEReferenced\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a2c26926-0195-4323-a301-e80649e7c36f}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\PhoneNumber\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ae54bed5-9211-4abc-ba7b-b80e46a0313f}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\PostHIRACode\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{857a55ba-f60b-46a5-b688-6ac16ee9edea}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\PreHIRACode\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b3d4c66f-4dcd-42a4-8000-bc845377d6cc}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\ReasonForAppeal\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a8f64b22-94ed-4722-ae27-4d3e1f34d6d3}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\ResolutionCompleteDiscussion\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{04a4c83f-8072-4af5-8287-90f362c1f9a5}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\ResolutionStatusModifiedBy\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0c3921b2-c5d2-485d-84ff-61918dd17421}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\ResolutionStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{50459cef-c42e-4fc6-9cd3-c4773f96d803}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\SupervisorRecChanges\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{100247f8-abef-4e84-bd52-7a099ca771d2}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\SupervisorResponseDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6c14e212-18e9-43cd-ad46-c04f0654e426}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Supervisor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2e47985d-2e73-4a94-8132-99bfb11a03a7}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Modules\HIRAChart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{123ad0b1-35b7-4167-8fc5-c2638ae3b082}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\NewForm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b50893a9-ac2c-46b1-8676-3193354576bb}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{9154437e-7f72-4418-b522-816918622a9a}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Safety First Report\Safety First Report Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7428a211-3b9b-4f95-b367-c0d3adf9c625}</SharePointProjectItemId>
+    </None>
+    <None Include="Safety First Report\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{af59ffef-0e04-4a0a-b822-7a5fa6f1be3f}</SharePointProjectItemId>
+    </None>
+    <None Include="SafetyFirst\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4923f7cc-39f4-4d65-a36d-477887076b4e}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Modules\EditForm\Elements.xml" />
+    <Content Include="Features\SafetyFirstFeature\SafetyFirstFeature.Template.xml">
+      <DependentUpon>SafetyFirstFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\AGMRecChanges\Elements.xml" />
+    <Content Include="Fields\AGM\Elements.xml" />
+    <Content Include="Fields\AnonymousReporting\Elements.xml" />
+    <Content Include="Fields\BusGarage\Elements.xml" />
+    <Content Include="Fields\BusNumber\Elements.xml" />
+    <Content Include="Fields\BusRouteNumber\Elements.xml" />
+    <Content Include="Fields\DelegatedRecChanges\Elements.xml" />
+    <Content Include="Fields\DelegatedResource\Elements.xml" />
+    <Content Include="Fields\DirectorRecChanges\Elements.xml" />
+    <Content Include="Fields\Director\Elements.xml" />
+    <Content Include="Fields\Division\Elements.xml" />
+    <Content Include="Fields\EmployeeRecChanges\Elements.xml" />
+    <Content Include="Fields\HazardDescription\Elements.xml" />
+    <Content Include="Fields\IncidentOccurrenceDate\Elements.xml" />
+    <Content Include="Fields\IncidentReportingDate\Elements.xml" />
+    <Content Include="Fields\InitialContactDate\Elements.xml" />
+    <Content Include="Fields\InitialContact\Elements.xml" />
+    <Content Include="Fields\IsAppeal\Elements.xml" />
+    <Content Include="Fields\LoggedBy\Elements.xml" />
+    <Content Include="Fields\LVEReferenced\Elements.xml" />
+    <Content Include="Fields\PhoneNumber\Elements.xml" />
+    <Content Include="Fields\PostHIRACode\Elements.xml" />
+    <Content Include="Fields\PreHIRACode\Elements.xml" />
+    <Content Include="Fields\ReasonForAppeal\Elements.xml" />
+    <Content Include="Fields\ResolutionCompleteDiscussion\Elements.xml" />
+    <Content Include="Fields\ResolutionStatusModifiedBy\Elements.xml" />
+    <Content Include="Fields\ResolutionStatus\Elements.xml" />
+    <Content Include="Fields\SupervisorRecChanges\Elements.xml" />
+    <Content Include="Fields\SupervisorResponseDate\Elements.xml" />
+    <Content Include="Fields\Supervisor\Elements.xml" />
+    <Content Include="Modules\HIRAChart\Elements.xml" />
+    <Content Include="Modules\HIRAChart\HIRA Chart.png" />
+    <Content Include="Modules\NewForm\NewSafety1stForm.aspx" />
+    <Content Include="Modules\EditForm\EditSafety1stForm.aspx" />
+    <Content Include="Modules\NewForm\Elements.xml" />
+    <Content Include="Safety First Report\Elements.xml" />
+    <Content Include="Safety First Report\Safety First Report Instance\Elements.xml" />
+    <Content Include="Safety First Report\Schema.xml" />
+    <Content Include="SafetyFirst\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

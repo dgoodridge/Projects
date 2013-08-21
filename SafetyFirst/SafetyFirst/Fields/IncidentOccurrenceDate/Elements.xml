@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{869d6d9d-53af-4dd6-bf0f-d52ba36649d2}"
+       Name="IncidentOccurrenceDate"
+       DisplayName="Incident Occurrence Date"
+       Type="DateTime"
+       Required="TRUE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

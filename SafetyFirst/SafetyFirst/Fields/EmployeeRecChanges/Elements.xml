@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{56752662-5ffd-4a75-a636-58e13cbcf337}"
+       Name="EmployeeRecChanges"
+       DisplayName="Employee Recommended Changes"
+       Type="Note"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

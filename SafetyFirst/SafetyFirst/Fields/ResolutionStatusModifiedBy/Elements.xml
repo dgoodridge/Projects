@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{edc5e9a1-5d27-4598-abd8-42a7a2851613}"
+       Name="ResolutionStatusModifiedBy"
+       DisplayName="Resolution Status Modified By"
+       Type="User"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

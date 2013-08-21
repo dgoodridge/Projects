@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d5bf6694-4581-40c1-bb06-009617502869}"
+       Name="IncidentReportingDate"
+       DisplayName="Incident Reporting Date"
+       Type="DateTime"
+       Required="TRUE"
+       Group="MARTA Site Columns">
+    <Default>[Today]</Default>
+  </Field>
+</Elements>

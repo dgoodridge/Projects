@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{46ce2ece-2155-43bb-ac5a-a084dce5fe95}"
+       Name="DelegatedRecChanges"
+       DisplayName="Delegated Resource Recommended Changes"
+       Type="Note"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

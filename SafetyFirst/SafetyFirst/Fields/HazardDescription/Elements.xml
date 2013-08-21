@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{87ac1157-ecd6-4f49-b0a0-4afe71398c8a}"
+       Name="HazardDescription"
+       DisplayName="Hazard Description"
+       Description="Description of the unsafe condition or hazardous work practice"
+       Type="Note"
+       Required="TRUE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

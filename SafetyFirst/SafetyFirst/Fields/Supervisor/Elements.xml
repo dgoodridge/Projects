@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d0ed5a92-01ec-482a-9774-fd5ea023c6c8}"
+       Name="Supervisor"
+       DisplayName="Supervisor"
+       Type="User"
+       Required="TRUE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

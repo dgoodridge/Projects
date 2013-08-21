@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{9ec3747f-831b-433e-988c-db8d681188b1}"
+       Name="PostHIRACode"
+       DisplayName="Post-HIRA Code"
+       Type="Choice"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+    <CHOICES>
+      <CHOICE>1A</CHOICE>
+      <CHOICE>1B</CHOICE>
+      <CHOICE>1C</CHOICE>
+      <CHOICE>1D</CHOICE>
+      <CHOICE>1E</CHOICE>
+      <CHOICE>2A</CHOICE>
+      <CHOICE>2B</CHOICE>
+      <CHOICE>2C</CHOICE>
+      <CHOICE>2D</CHOICE>
+      <CHOICE>2E</CHOICE>
+      <CHOICE>3A</CHOICE>
+      <CHOICE>3B</CHOICE>
+      <CHOICE>3C</CHOICE>
+      <CHOICE>3D</CHOICE>
+      <CHOICE>3E</CHOICE>
+      <CHOICE>4A</CHOICE>
+      <CHOICE>4B</CHOICE>
+      <CHOICE>4C</CHOICE>
+      <CHOICE>4D</CHOICE>
+      <CHOICE>4E</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

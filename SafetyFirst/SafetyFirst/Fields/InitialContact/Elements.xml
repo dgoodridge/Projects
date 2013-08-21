@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{8cd97cdf-8ccd-49f2-bac0-432ea4b33392}"
+       Name="InitialContact"
+       DisplayName="Supervisor/Employee Initial Contact"
+       Description="Checking this box indicates that you, the supervisor, have contacted the employee that submitted this report"
+       Type="Boolean"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

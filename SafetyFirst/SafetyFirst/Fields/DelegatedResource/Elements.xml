@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{db726a88-f6ce-4ec4-ad6b-d643f81b0a38}"
+       Name="DelegatedResource"
+       DisplayName="Delegated Resource"
+       Description="Name of individual the report is being redirected to"
+       Type="User"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

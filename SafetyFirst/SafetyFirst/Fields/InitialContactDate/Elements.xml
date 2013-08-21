@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{e213720c-b8bd-48d7-aa1d-ba57ba663f5c}"
+       Name="InitialContactDate"
+       DisplayName="Initial Contact Date"
+       Type="DateTime"
+       Hidden="TRUE"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>

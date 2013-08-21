@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{484f654b-2184-4d3e-964e-72e66e0830bd}"
+       Name="AGMRecChanges"
+       DisplayName="AGM Recommended Changes"
+       Type="Note"
+       Required="FALSE"
+       Group="MARTA Site Columns">
+  </Field>
+</Elements>
