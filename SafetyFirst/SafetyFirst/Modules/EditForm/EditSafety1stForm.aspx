@@ -48,17 +48,17 @@
                                      <tr> 
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
-                                                 <nobr> Title<span  class="ms-formvalidation">  *</span></nobr> 
+                                                 <nobr>Incident Reporting Date<span  class="ms-formvalidation">  *</span></nobr> 
                                              </h3> 
                                          </td> 
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_Title"  ControlMode="Edit"  FieldName="Title"  /> 
-                                             <SharePoint:FieldDescription  runat="server"  ID="field_Title_Description"  FieldName="Title" 
-                                                 ControlMode="New"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="IncidenceReportingDateField"  ControlMode="Display"  FieldName="IncendenceReportingDate"  /> 
+                                             <SharePoint:FieldDescription  runat="server"  ID="field_IncidenceReportingDate_Description"  FieldName="IncidenceReportingDate" 
+                                                 ControlMode="Display"  /> 
                                          </td> 
                                      </tr> 
                                      
-                                      <tr> 
+<%--                                      <tr> 
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
                                                  <nobr> Agenda Order<span  class="ms-formvalidation">  *</span></nobr> 
@@ -137,7 +137,7 @@
                                             
                                         </td> 
                                     </tr>
-                                    
+                                    --%>
 
                                      <!-- ikarstein: Add this table for "Save" and "Cancel" buttons / BEGIN --> 
                                      <tr>

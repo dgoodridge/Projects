@@ -116,7 +116,7 @@
       </View></Views>
     <Forms>
       <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
-      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="Features\$SharePoint.Feature.DeploymentPath$\EditForm\EditSafety1stForm.aspx" WebPartZoneID="Main" />
       <Form Type="NewForm" Url="NewSafety1stForm.aspx" SetupPath="Features\$SharePoint.Feature.DeploymentPath$\NewForm\NewSafety1stForm.aspx" WebPartZoneID="Main" />
     </Forms>
   </MetaData>

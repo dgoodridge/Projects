@@ -220,7 +220,7 @@
     <Content Include="Fields\SupervisorResponseDate\Elements.xml" />
     <Content Include="Fields\Supervisor\Elements.xml" />
     <Content Include="Modules\HIRAChart\Elements.xml" />
-    <Content Include="Modules\HIRAChart\HIRA Chart.png" />
+    <Content Include="Modules\HIRAChart\HIRAChart.png" />
     <Content Include="Modules\NewForm\NewSafety1stForm.aspx" />
     <Content Include="Modules\EditForm\EditSafety1stForm.aspx" />
     <Content Include="Modules\NewForm\Elements.xml" />
