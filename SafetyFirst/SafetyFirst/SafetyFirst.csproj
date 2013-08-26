@@ -53,25 +53,9 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modules\EditForm\EditSafetyFirstForm.aspx.cs">
-      <DependentUpon>EditSafetyFirstForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\EditForm\EditSafetyFirstForm.aspx.designer.cs">
-      <DependentUpon>EditSafetyFirstForm.aspx.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\NewForm\NewSafety1stForm.aspx.cs">
-      <DependentUpon>NewSafety1stForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Layouts\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{56307797-7c01-4210-bab4-7a90a7aec605}</SharePointProjectItemId>
-    </None>
-    <None Include="Modules\EditForm\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{e364e7dc-bf4e-4a25-84f1-a409cbef3db6}</SharePointProjectItemId>
-    </None>
     <None Include="Features\SafetyFirstFeature\SafetyFirstFeature.feature">
       <FeatureId>{ecc2e2fd-726f-4f63-9ff4-7e7e69365cc3}</FeatureId>
     </None>
@@ -166,34 +150,18 @@
       <SharePointProjectItemId>{2e47985d-2e73-4a94-8132-99bfb11a03a7}</SharePointProjectItemId>
     </None>
     <None Include="key.snk" />
-    <None Include="Modules\HIRAChart\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{123ad0b1-35b7-4167-8fc5-c2638ae3b082}</SharePointProjectItemId>
-    </None>
-    <None Include="Modules\NewForm\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b50893a9-ac2c-46b1-8676-3193354576bb}</SharePointProjectItemId>
-    </None>
     <None Include="Package\Package.package">
       <PackageId>{9154437e-7f72-4418-b522-816918622a9a}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="Safety First Report\Safety First Report Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{7428a211-3b9b-4f95-b367-c0d3adf9c625}</SharePointProjectItemId>
-    </None>
-    <None Include="Safety First Report\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{af59ffef-0e04-4a0a-b822-7a5fa6f1be3f}</SharePointProjectItemId>
-    </None>
     <None Include="SafetyFirst\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{4923f7cc-39f4-4d65-a36d-477887076b4e}</SharePointProjectItemId>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Layouts\SafetyFirst\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Modules\EditForm\EditSafetyFirstForm.aspx" />
-    <Content Include="Modules\EditForm\Elements.xml" />
     <Content Include="Features\SafetyFirstFeature\SafetyFirstFeature.Template.xml">
       <DependentUpon>SafetyFirstFeature.feature</DependentUpon>
     </Content>
@@ -227,13 +195,6 @@
     <Content Include="Fields\SupervisorRecChanges\Elements.xml" />
     <Content Include="Fields\SupervisorResponseDate\Elements.xml" />
     <Content Include="Fields\Supervisor\Elements.xml" />
-    <Content Include="Modules\HIRAChart\Elements.xml" />
-    <Content Include="Modules\HIRAChart\HIRAChart.png" />
-    <Content Include="Modules\NewForm\NewSafety1stForm.aspx" />
-    <Content Include="Modules\NewForm\Elements.xml" />
-    <Content Include="Safety First Report\Elements.xml" />
-    <Content Include="Safety First Report\Safety First Report Instance\Elements.xml" />
-    <Content Include="Safety First Report\Schema.xml" />
     <Content Include="SafetyFirst\Elements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

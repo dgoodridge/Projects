@@ -4,7 +4,7 @@
   <ContentType ID="0x010036B9690730774E8C8F36C59BD19589E8" Name="SafetyFirst" Group="MyMARTA Content Types" Description="Safety First form content type" Inherits="FALSE" Version="0">
     <FieldRefs>
       <FieldRef ID="{d5bf6694-4581-40c1-bb06-009617502869}" DisplayName="Incident Reporting Date" Required="TRUE" Name="IncidentReportingDate" />
-      <FieldRef ID="{869d6d9d-53af-4dd6-bf0f-d52ba36649d2}" DisplayName="Incident Occurrence Date" Required="TRUE" Name="IncidentOccurrenceDate" />
+      
       <FieldRef ID="{8dc66793-e123-43b2-93c2-720484f2bd3b}" DisplayName="Anonymous Reporting" Required="FALSE" Name="AnonymousReporting" />
       <FieldRef ID="{a7b4f66a-0b2d-463e-8b5d-fdc522150cc5}" DisplayName="Is Appeal" Required="FALSE" Description="Do you wish to appeal this decision?" Name="IsAppeal" ShowInNewForm="FALSE" />
       <FieldRef ID="{250a837a-d568-4e40-935c-d5c1c0374bdd}" DisplayName="Reason for Appeal" Required="FALSE" Name="ReasonForAppeal" ShowInNewForm="FALSE" />
@@ -19,6 +19,7 @@
       <FieldRef ID="{c6a44cb1-742c-4632-8d1a-912784ecf175}" DisplayName="Bus Route Number" Required="FALSE" Name="BusRouteNumber" />
       <FieldRef ID="{a6bf7656-4d04-4026-b165-674f7fd8c0fe}" DisplayName="Bus Garage" Required="FALSE" Name="BusGarage" />
       <FieldRef ID="{ff767187-c3ea-46e9-973a-9797659f2b58}" DisplayName="Location, Vehicle and/or Equipment Referenced" Required="TRUE" Description="Vehicle, Equipment or location of hazard related to the incident being reported" Name="LVEReferenced" />
+      <FieldRef ID="{869d6d9d-53af-4dd6-bf0f-d52ba36649d2}" DisplayName="Incident Occurrence Date" Required="TRUE" Name="IncidentOccurrenceDate" />
       <FieldRef ID="{87ac1157-ecd6-4f49-b0a0-4afe71398c8a}" DisplayName="Hazard Description" Required="TRUE" Description="Description of the unsafe condition or hazardous work practice" Name="HazardDescription" />
       <FieldRef ID="{56752662-5ffd-4a75-a636-58e13cbcf337}" DisplayName="Employee Recommended Changes" Required="FALSE" Name="EmployeeRecChanges" />
       <FieldRef ID="{d750a7d1-02f8-42dc-b9e4-1a910bbb9504}" DisplayName="Resolution Status" Required="TRUE" Name="ResolutionStatus" ShowInNewForm="FALSE" />

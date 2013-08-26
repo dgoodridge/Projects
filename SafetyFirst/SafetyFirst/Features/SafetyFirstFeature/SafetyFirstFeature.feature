@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="16783c5d-205c-4e15-a741-66d56a78090f" description="Contains custom fields, content type, list and views for the Safety First form" featureId="16783c5d-205c-4e15-a741-66d56a78090f" imageUrl="" scope="Site" solutionId="00000000-0000-0000-0000-000000000000" title="SafetyFirst Feature1" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
+<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="16783c5d-205c-4e15-a741-66d56a78090f" description="Contains custom fields and content type for the Safety First form" featureId="16783c5d-205c-4e15-a741-66d56a78090f" imageUrl="" scope="Site" solutionId="00000000-0000-0000-0000-000000000000" title="SafetyFirst CustomFields" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
   <projectItems>
-    <projectItemReference itemId="b50893a9-ac2c-46b1-8676-3193354576bb" />
-    <projectItemReference itemId="e364e7dc-bf4e-4a25-84f1-a409cbef3db6" />
-    <projectItemReference itemId="af59ffef-0e04-4a0a-b822-7a5fa6f1be3f" />
-    <projectItemReference itemId="7428a211-3b9b-4f95-b367-c0d3adf9c625" />
     <projectItemReference itemId="6c14e212-18e9-43cd-ad46-c04f0654e426" />
     <projectItemReference itemId="db9ac4ea-a895-4312-80b7-121329597c4b" />
     <projectItemReference itemId="857a55ba-f60b-46a5-b688-6ac16ee9edea" />
@@ -28,7 +24,6 @@
     <projectItemReference itemId="6dd52211-3727-4e47-982a-1703d7f2125c" />
     <projectItemReference itemId="817c376d-b430-4a80-b83d-d24bab92c6fd" />
     <projectItemReference itemId="fdc35ab6-3be6-4848-b28e-b451a20ad692" />
-    <projectItemReference itemId="4923f7cc-39f4-4d65-a36d-477887076b4e" />
     <projectItemReference itemId="8fc665ec-bb1f-49c7-aa45-f952074c630a" />
     <projectItemReference itemId="a8f64b22-94ed-4722-ae27-4d3e1f34d6d3" />
     <projectItemReference itemId="14328d31-052b-44a9-9f5d-ca6f2218db75" />
@@ -36,6 +31,6 @@
     <projectItemReference itemId="f486bb69-047e-4a18-816f-01ad4420d5f7" />
     <projectItemReference itemId="e2865120-410a-4772-b170-f1d0bbfa6f6b" />
     <projectItemReference itemId="ae54bed5-9211-4abc-ba7b-b80e46a0313f" />
-    <projectItemReference itemId="123ad0b1-35b7-4167-8fc5-c2638ae3b082" />
+    <projectItemReference itemId="4923f7cc-39f4-4d65-a36d-477887076b4e" />
   </projectItems>
 </feature>
