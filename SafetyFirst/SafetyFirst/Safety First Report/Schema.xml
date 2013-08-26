@@ -113,11 +113,53 @@
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
         </ParameterBindings>
-      </View></Views>
+      </View>
+    
+    <View BaseViewID="2" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="" />
+      <FieldRef Name="LoggedBy" />
+          <FieldRef Name="JobTitle" />
+          <FieldRef Name="Department" />
+          <FieldRef Name="Division" />
+      <FieldRef Name="PrimaryNumber" />
+          <FieldRef Name="EMail" />
+          <FieldRef Name="BusNumber" />
+          <FieldRef Name="BusRouteNumber" />
+          <FieldRef Name="BusGarage" />
+      <FieldRef Name="LVEReferenced" />
+          <FieldRef Name="HazardDescription" />
+          <FieldRef Name="EmployeeRecChanges" />
+          <FieldRef Name="Supervisor" />
+          <FieldRef Name="SupervisorRecChanges" />
+      <FieldRef Name="ResolutionStatus" />
+      <FieldRef Name="HazardDescription" />
+      <FieldRef Name="Supervisor" />
+      <FieldRef Name="InitialContact" />
+      <FieldRef Name="ResolutionCompleteDiscussion" />
+      </ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    
+      </Views>
     <Forms>
       <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
-      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="Features\$SharePoint.Feature.DeploymentPath$\EditForm\EditSafety1stForm.aspx" WebPartZoneID="Main" />
-      <Form Type="NewForm" Url="NewSafety1stForm.aspx" SetupPath="Features\$SharePoint.Feature.DeploymentPath$\NewForm\NewSafety1stForm.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditSafetyFirstForm.aspx" SetupPath="Features\$SharePoint.Feature.DeploymentPath$\EditForm\EditSafetyFirstForm.aspx" UseLegacyForm="TRUE" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\Form.aspx" WebPartZoneID="Main" />
     </Forms>
   </MetaData>
 </List>

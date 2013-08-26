@@ -5,10 +5,11 @@ using Microsoft.SharePoint.WebPartPages;
 
 namespace SafetyFirst.Layouts.SafetyFirst
 {
-    public partial class EditSafet1stForm : WebPartPage
+    public partial class EditSafetyFirstForm : WebPartPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
         }
     }
 }

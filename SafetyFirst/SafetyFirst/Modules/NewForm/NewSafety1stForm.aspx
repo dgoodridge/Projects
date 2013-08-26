@@ -32,33 +32,6 @@
 	 
 	 </WebPartPages:WebPartZone>
 
-          <!-- Begin Custom Form -->
-          <!-- ikarstein: Insert such a structure for each field you want to show on you page -->
-          <h1>Test Columns</h1>      
-          <table border="0" width="100%">
-                    <tr>
-                        <td class="ms-toolbar" nowrap="nowrap">
-                            <SharePoint:FormToolBar ID="FormToolBar1" runat="server" ControlMode="New" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- ikarstein: Insert such a table row for each field / BEGIN-->
-                                    <tr>
-                                        <td width="190px" valign="top" class="ms-formlabel">
-                                            <h3 class="ms-standardheader">
-                                                <nobr>Title<span class="ms-formvalidation"> *</span></nobr>
-                                            </h3>
-                                        </td>
-                                        <td width="400px" valign="top" class="ms-formbody">
-                                            <SharePoint:FormField runat="server" ID="field_Title" ControlMode="New" FieldName="Title" />
-                                            <SharePoint:FieldDescription runat="server" ID="field_Title_Description" FieldName="Title"
-                                                ControlMode="New" />
-                                        </td>
-                                    </tr>
-                            </td>
-                        </tr> 
-                    </table>
 	  </td>
 	 </tr>
 	</table>

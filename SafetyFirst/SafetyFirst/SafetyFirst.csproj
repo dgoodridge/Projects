@@ -53,17 +53,22 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modules\EditForm\EditSafetyFirstForm.aspx.cs">
+      <DependentUpon>EditSafetyFirstForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditForm\EditSafetyFirstForm.aspx.designer.cs">
+      <DependentUpon>EditSafetyFirstForm.aspx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\NewForm\NewSafety1stForm.aspx.cs">
       <DependentUpon>NewSafety1stForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Modules\EditForm\EditSafety1stForm.aspx.cs">
-      <DependentUpon>EditSafety1stForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{56307797-7c01-4210-bab4-7a90a7aec605}</SharePointProjectItemId>
+    </None>
     <None Include="Modules\EditForm\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e364e7dc-bf4e-4a25-84f1-a409cbef3db6}</SharePointProjectItemId>
     </None>
@@ -183,8 +188,11 @@
       <SharePointProjectItemId>{4923f7cc-39f4-4d65-a36d-477887076b4e}</SharePointProjectItemId>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Folder Include="Layouts\SafetyFirst\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modules\EditForm\EditSafetyFirstForm.aspx" />
     <Content Include="Modules\EditForm\Elements.xml" />
     <Content Include="Features\SafetyFirstFeature\SafetyFirstFeature.Template.xml">
       <DependentUpon>SafetyFirstFeature.feature</DependentUpon>
@@ -222,7 +230,6 @@
     <Content Include="Modules\HIRAChart\Elements.xml" />
     <Content Include="Modules\HIRAChart\HIRAChart.png" />
     <Content Include="Modules\NewForm\NewSafety1stForm.aspx" />
-    <Content Include="Modules\EditForm\EditSafety1stForm.aspx" />
     <Content Include="Modules\NewForm\Elements.xml" />
     <Content Include="Safety First Report\Elements.xml" />
     <Content Include="Safety First Report\Safety First Report Instance\Elements.xml" />

@@ -2,9 +2,8 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="EditForm"
           Url="SiteAssets">
-    <File Path="EditForm\EditSafety1stForm.aspx"
-          Url="EditSafety1stForm.aspx"
+    <File Path="EditForm\EditSafetyFirstForm.aspx" 
+          Url="EditSafetyFirstForm.aspx"
           Type="GhostableInLibrary"/>
-    <File Path="EditForm\EditSafety1stForm.aspx" Url="EditForm/EditSafety1stForm.aspx" />
   </Module>
 </Elements>
