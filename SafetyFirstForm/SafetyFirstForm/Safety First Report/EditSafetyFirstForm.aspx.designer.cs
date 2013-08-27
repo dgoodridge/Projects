@@ -58,15 +58,6 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FormToolBar FormToolBar1;
         
         /// <summary>
-        /// pnlSupervisor control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlSupervisor;
-        
-        /// <summary>
         /// IncidentReportingDateField control.
         /// </summary>
         /// <remarks>
@@ -292,13 +283,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FormField IncidentDateField;
         
         /// <summary>
-        /// field_IncidentDate_Description control.
+        /// field_IncidentOccurenceDate_Description control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FieldDescription field_IncidentDate_Description;
+        protected global::Microsoft.SharePoint.WebControls.FieldDescription field_IncidentOccurenceDate_Description;
         
         /// <summary>
         /// HazardDescriptionField control.
@@ -389,6 +380,60 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_SupervisorRecChanges;
+        
+        /// <summary>
+        /// InitialContactField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Microsoft.SharePoint.WebControls.FormField InitialContactField;
+        
+        /// <summary>
+        /// ConditionalBreak control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel ConditionalBreak;
+        
+        /// <summary>
+        /// field_InitialContact_Description control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Microsoft.SharePoint.WebControls.FieldDescription field_InitialContact_Description;
+        
+        /// <summary>
+        /// pnlComplete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlComplete;
+        
+        /// <summary>
+        /// ResolutionCompleteDiscussionField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Microsoft.SharePoint.WebControls.FormField ResolutionCompleteDiscussionField;
+        
+        /// <summary>
+        /// field_ResolutionCompleteDiscussion_Description control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Microsoft.SharePoint.WebControls.FieldDescription field_ResolutionCompleteDiscussion_Description;
         
         /// <summary>
         /// DirectorField control.
@@ -499,15 +544,6 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_DelegatedRecChanges_Description;
         
         /// <summary>
-        /// imgHIRAChart control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgHIRAChart;
-        
-        /// <summary>
         /// PreHIRACodeField control.
         /// </summary>
         /// <remarks>
@@ -542,6 +578,15 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_PostHIRACode_Description;
+        
+        /// <summary>
+        /// imgHIRAChart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgHIRAChart;
         
         /// <summary>
         /// savebutton control.

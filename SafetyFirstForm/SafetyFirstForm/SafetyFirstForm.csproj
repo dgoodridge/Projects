@@ -14,6 +14,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <SandboxedSolution>False</SandboxedSolution>
+    <PostDeploymentCommand>xcopy /y "%24%28TargetDir%29SafetyFirstForm.wsp" "C:\Users\Administrator\Documents\Visual Studio 2012\Projects\Solutions"</PostDeploymentCommand>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,6 +53,9 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\SafetyFirstFormFeature\SafetyFirstFormFeature.EventReceiver.cs">
+      <DependentUpon>SafetyFirstFormFeature.feature</DependentUpon>
+    </Compile>
     <Compile Include="Safety First Report\EditSafetyFirstForm.aspx.cs">
       <DependentUpon>EditSafetyFirstForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -69,7 +73,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Features\Feature1\Feature1.feature">
+    <None Include="Features\SafetyFirstFormFeature\SafetyFirstFormFeature.feature">
       <FeatureId>{30618776-85d4-4cec-a650-9b46e26f64a1}</FeatureId>
     </None>
     <None Include="key.snk" />
@@ -91,8 +95,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
+    <Content Include="Features\SafetyFirstFormFeature\SafetyFirstFormFeature.Template.xml">
+      <DependentUpon>SafetyFirstFormFeature.feature</DependentUpon>
     </Content>
     <Content Include="Modules\HIRAChart\Elements.xml" />
     <Content Include="Modules\HIRAChart\HIRAChart.png" />

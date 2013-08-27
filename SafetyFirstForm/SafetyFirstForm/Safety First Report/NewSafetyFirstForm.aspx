@@ -26,10 +26,10 @@
 	 <ZoneTemplate>
      </ZoneTemplate>
 </WebPartPages:WebPartZone>
-          <h1>Hello Custom Form</h1>
           <!-- Begin Custom Form -->
           <!-- ikarstein: Insert such a structure for each field you want to show on you page --> 
-                 <table id="agendaFormTable"  border="0"  width="100%"> 
+          <asp:Panel ID="PrintForm" runat="server">      
+          <table id="agendaFormTable"  border="0"  width="100%"> 
                      <tr> 
                          <td  class="ms-toolbar"  nowrap="nowrap"> 
                             <SharePoint:FormToolBar ID="FormToolBar1"  runat="server"  ControlMode="Edit"  /> 
@@ -48,9 +48,20 @@
                                              </h3> 
                                          </td> 
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="IncidentReportingDateField"  ControlMode="Edit"  FieldName="IncindentReportingDate"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="IncidentReportingDateField"  ControlMode="New"  FieldName="IncidentReportingDate"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_IncidenceReportingDate_Description"  FieldName="IncidentReportingDate" /> 
                                          </td> 
+                                     </tr> 
+                                     <tr>
+                                         <td  width="190px"  valign="top"  class="ms-formlabel"> 
+                                             <h3  class="ms-standardheader"> 
+                                                 <nobr>Anonymous Reporting<span class="ms-formvalidation"> *</span></nobr> 
+                                             </h3> 
+                                         </td>
+                                         <td  width="400px"  valign="top"  class="ms-formbody"> 
+                                             <SharePoint:FormField  runat="server"  ID="AnonymousReportingField"  ControlMode="New"  FieldName="AnonymousReporting" OnValueChanged="AnonymousReportingField_ValueChanged"  /> 
+                                             <SharePoint:FieldDescription  runat="server"  ID="field_AnonymousReporting_Description"  FieldName="AnonymousReporting" /> 
+                                         </td>
                                      </tr> 
                                      <tr>
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
@@ -104,8 +115,8 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="PrimaryNumberField"  ControlMode="New"  FieldName="PrimaryNumber"  /> 
-                                             <SharePoint:FieldDescription  runat="server"  ID="field_PrimaryNumber_Description"  FieldName="PrimaryNumber"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="PrimaryNumberField"  ControlMode="New"  FieldName="PhoneNumber"  /> 
+                                             <SharePoint:FieldDescription  runat="server"  ID="field_PrimaryNumber_Description"  FieldName="PhoneNumber"  /> 
                                          </td>
                                      </tr>
                                      <tr>
@@ -181,8 +192,8 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="IncidentDateField"  ControlMode="New"  FieldName="IncidentDate"  /> 
-                                             <SharePoint:FieldDescription  runat="server"  ID="field_IncidentDate_Description"  FieldName="IncidentDate"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="IncidentDateField"  ControlMode="New"  FieldName="IncidentOccurrenceDate"  /> 
+                                             <SharePoint:FieldDescription  runat="server"  ID="field_IncidentOccurrenceDate_Description"  FieldName="IncidentOccurrenceDate"  /> 
                                          </td>
                                      </tr>
                                      <tr>
@@ -251,7 +262,7 @@
                                              <SharePoint:FieldDescription  runat="server"  ID="field_AGM_Description"  FieldName="AGM"  /> 
                                          </td>
                                      </tr>
-                                     
+                                     </asp:Panel>
                                      
 
                                      <!-- ikarstein: Add this table for "Save" and "Cancel" buttons / BEGIN --> 
@@ -262,13 +273,17 @@
                                                      <td  width="99%"  class="ms-toolbar"  nowrap="nowrap"> 
                                                          <img  src="/_layouts/images/blank.gif"  width="1"  height="18"  /> 
                                                      </td> 
+                                                      <td  class="ms-toolbar"  nowrap="nowrap"> 
+                                                         <asp:Button ID="printbutton" Text="Print" runat="server" OnClick="printbutton_Click" Visible="true" /> 
+                                                    </td> 
                                                      <td  class="ms-toolbar"  nowrap="nowrap"> 
-                                                         <SharePoint:SaveButton  runat="server"  ControlMode="Edit"  ID="savebutton"  /> 
+                                                         <SharePoint:SaveButton  runat="server"  ControlMode="Edit"  ID="savebutton"   /> 
                                                     </td> 
                                                      <td  class="ms-separator"> 
                                                      </td> 
                                                      <td  class="ms-toolbar"  nowrap="nowrap"  align="right"> 
                                                          <SharePoint:GoBackButton  runat="server"  ControlMode="Edit"  ID="gobackbutton"  /> 
+                                                         
                                                      </td> 
                                                  </tr> 
                                          </table> 

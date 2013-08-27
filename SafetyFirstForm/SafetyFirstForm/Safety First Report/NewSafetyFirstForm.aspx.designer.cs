@@ -49,6 +49,15 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebPartPages.WebPartZone Main;
         
         /// <summary>
+        /// PrintForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PrintForm;
+        
+        /// <summary>
         /// FormToolBar1 control.
         /// </summary>
         /// <remarks>
@@ -83,6 +92,24 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_IncidenceReportingDate_Description;
+        
+        /// <summary>
+        /// AnonymousReportingField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Microsoft.SharePoint.WebControls.FormField AnonymousReportingField;
+        
+        /// <summary>
+        /// field_AnonymousReporting_Description control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Microsoft.SharePoint.WebControls.FieldDescription field_AnonymousReporting_Description;
         
         /// <summary>
         /// LoggedByField control.
@@ -292,13 +319,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FormField IncidentDateField;
         
         /// <summary>
-        /// field_IncidentDate_Description control.
+        /// field_IncidentOccurrenceDate_Description control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FieldDescription field_IncidentDate_Description;
+        protected global::Microsoft.SharePoint.WebControls.FieldDescription field_IncidentOccurrenceDate_Description;
         
         /// <summary>
         /// HazardDescriptionField control.
@@ -407,6 +434,15 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_AGM_Description;
+        
+        /// <summary>
+        /// printbutton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button printbutton;
         
         /// <summary>
         /// savebutton control.

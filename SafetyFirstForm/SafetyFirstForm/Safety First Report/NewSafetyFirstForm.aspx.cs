@@ -10,5 +10,18 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm
         protected void Page_Load(object sender, EventArgs e)
         {
         }
+
+        protected void AnonymousReportingField_ValueChanged(object sender, EventArgs e)
+        {
+            savebutton.Visible = false;
+            printbutton.Visible = true;
+        }
+
+        protected void printbutton_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+
     }
 }
