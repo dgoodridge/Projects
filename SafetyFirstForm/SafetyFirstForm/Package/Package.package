@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="8c619f85-fada-436b-b76b-39aeeb10cf18" solutionId="8c619f85-fada-436b-b76b-39aeeb10cf18" resetWebServer="false" sharePointProductVersion="15.0" name="SafetyFirstForm" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="30618776-85d4-4cec-a650-9b46e26f64a1" />
+  </features>
+</package>

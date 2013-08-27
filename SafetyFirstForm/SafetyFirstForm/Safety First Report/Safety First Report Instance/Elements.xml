@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Safety First Report"
+                OnQuickLaunch="TRUE"
+                TemplateType="10002"
+                Url="Lists/Safety First Report"
+                Description="Report Hazardous Conditions with the Safety First form">
+
+  </ListInstance>
+</Elements>
