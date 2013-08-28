@@ -1,7 +1,12 @@
 ﻿<%@ Assembly Name="$SharePoint.Project.AssemblyFullName$" %>
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NewSafetyFirstForm.aspx.cs" Inherits="SafetyFirstForm.Layouts.SafetyFirstForm.NewSafetyFirstForm" MasterPageFile="~masterurl/default.master" %>
 
-<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Import Namespace="Microsoft.SharePoint" %> <%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> 
+<%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> 
+<%@ Import Namespace="Microsoft.SharePoint" %> <%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> 
+<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderPageTitle" runat="server">
 	<SharePoint:ListFormPageTitle ID="ListFormPageTitle1" runat="server"/>
 </asp:Content>
@@ -14,6 +19,7 @@
 	<img src="/_layouts/15/images/blank.gif?rev=23" width='1' height='1' alt="" />
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderId="PlaceHolderMain" runat="server">
+  <%-- <SharePoint:ScriptLink ID="ScriptLink1" language="javascript" name=".js" OnDemand="true" runat="server" Localizable="false" />--%>
 <SharePoint:UIVersionedContent ID="UIVersionedContent1" UIVersion="4" runat="server">
 	<ContentTemplate>
 	<div style="padding-left:5px">
@@ -25,10 +31,26 @@
 	 <WebPartPages:WebPartZone runat="server" FrameType="None" ID="Main" Title="loc:Main">
 	 <ZoneTemplate>
      </ZoneTemplate>
-</WebPartPages:WebPartZone>
+</WebPartPages:WebPartZone> 
+          <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1.js"></script>
+          <%--<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1-vsdoc.js"></script>--%>
+          <script language="ecmascript" type="text/ecmascript">
+              
+              $(document).ready(function () {
+                  $('select[id*=field_AnonymousReporting').change(function () {
+                      var checked = this.is(":checked");
+                      if (checked) {
+                          $("#printButton").show();
+                      }
+                  });
+              });
+
+        </script>
+
           <!-- Begin Custom Form -->
           <!-- ikarstein: Insert such a structure for each field you want to show on you page --> 
           <asp:Panel ID="PrintForm" runat="server">      
+              <asp:Panel ID="hideMe" runat="server"><h1>I'm showing</h1></asp:Panel>
           <table id="agendaFormTable"  border="0"  width="100%"> 
                      <tr> 
                          <td  class="ms-toolbar"  nowrap="nowrap"> 
@@ -48,8 +70,8 @@
                                              </h3> 
                                          </td> 
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="IncidentReportingDateField"  ControlMode="New"  FieldName="IncidentReportingDate"  /> 
-                                             <SharePoint:FieldDescription  runat="server"  ID="field_IncidenceReportingDate_Description"  FieldName="IncidentReportingDate" /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_IncidentReportingDate"  ControlMode="New"  FieldName="IncidentReportingDate"  /> 
+                                             <SharePoint:FieldDescription  runat="server"  ID="field_IncidentReportingDate_Description"  FieldName="IncidentReportingDate" /> 
                                          </td> 
                                      </tr> 
                                      <tr>
@@ -59,7 +81,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="AnonymousReportingField"  ControlMode="New"  FieldName="AnonymousReporting" OnValueChanged="AnonymousReportingField_ValueChanged"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_AnonymousReporting"  ControlMode="New"  FieldName="AnonymousReporting" /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_AnonymousReporting_Description"  FieldName="AnonymousReporting" /> 
                                          </td>
                                      </tr> 
@@ -70,7 +92,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="LoggedByField"  ControlMode="New"  FieldName="LoggedBy"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_LoggedBy"  ControlMode="New"  FieldName="LoggedBy"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_LoggedBy_Description"  FieldName="LoggedBy" /> 
                                          </td>
                                      </tr>
@@ -82,7 +104,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="JobTitleField"  ControlMode="New"  FieldName="JobTitle"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_JobTitle"  ControlMode="New"  FieldName="JobTitle"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_JobTitle_Description"  FieldName="JobTitle"  /> 
                                          </td>
                                      </tr>
@@ -93,7 +115,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="DepartmentField"  ControlMode="New"  FieldName="ol_Department"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_Department"  ControlMode="New"  FieldName="ol_Department"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_Department_Description"  FieldName="ol_Department"  /> 
                                          </td>
                                      </tr>
@@ -104,7 +126,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="DivisionField"  ControlMode="New"  FieldName="Division"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_Division"  ControlMode="New"  FieldName="Division"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_Division_Description"  FieldName="Division"  /> 
                                          </td>
                                      </tr>
@@ -115,7 +137,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="PrimaryNumberField"  ControlMode="New"  FieldName="PhoneNumber"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_PrimaryNumber"  ControlMode="New"  FieldName="PhoneNumber"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_PrimaryNumber_Description"  FieldName="PhoneNumber"  /> 
                                          </td>
                                      </tr>
@@ -126,7 +148,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="CellPhoneField"  ControlMode="New"  FieldName="CellPhone"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_CellPhone"  ControlMode="New"  FieldName="CellPhone"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_CellPhone_Description"  FieldName="CellPhone"  /> 
                                          </td>
                                      </tr>
@@ -137,7 +159,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="EMailField"  ControlMode="New"  FieldName="EMail"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_EMail"  ControlMode="New"  FieldName="EMail"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_EMail_Description"  FieldName="EMail"  /> 
                                          </td>
                                      </tr>
@@ -148,7 +170,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="BusNumberField"  ControlMode="New"  FieldName="BusNumber"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_BusNumber"  ControlMode="New"  FieldName="BusNumber"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_BusNumber_Description"  FieldName="BusNumber"  /> 
                                          </td>
                                      </tr>
@@ -159,7 +181,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="BusRouteNumberField"  ControlMode="New"  FieldName="BusRouteNumber"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_BusRouteNumber"  ControlMode="New"  FieldName="BusRouteNumber"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_BusRouteNumber_Description"  FieldName="BusRouteNumber"  /> 
                                          </td>
                                      </tr>
@@ -170,7 +192,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="BusGarageField"  ControlMode="New"  FieldName="BusGarage"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_BusGarage"  ControlMode="New"  FieldName="BusGarage"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_BusGarage_Description"  FieldName="BusGarage"  /> 
                                          </td>
                                      </tr>
@@ -181,7 +203,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="LVEReferencedField"  ControlMode="New"  FieldName="LVEReferenced"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_LVEReferenced"  ControlMode="New"  FieldName="LVEReferenced"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_LVEReferenced_Description"  FieldName="LVEReferenced"  /> 
                                          </td>
                                      </tr>
@@ -192,7 +214,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="IncidentDateField"  ControlMode="New"  FieldName="IncidentOccurrenceDate"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_IncidentDate"  ControlMode="New"  FieldName="IncidentOccurrenceDate"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_IncidentOccurrenceDate_Description"  FieldName="IncidentOccurrenceDate"  /> 
                                          </td>
                                      </tr>
@@ -203,7 +225,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="HazardDescriptionField"  ControlMode="New"  FieldName="HazardDescription"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_HazardDescription"  ControlMode="New"  FieldName="HazardDescription"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_HazardDescription_Description"  FieldName="HazardDescription"  /> 
                                          </td>
                                      </tr>
@@ -214,7 +236,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="EmployeeRecChangesField"  ControlMode="New"  FieldName="EmployeeRecChanges"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_EmployeeRecChanges"  ControlMode="New"  FieldName="EmployeeRecChanges"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_EmployeeRecChanges_Description"  FieldName="EmployeeRecChanges"  /> 
                                          </td>
                                      </tr>
@@ -225,7 +247,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="ResolutionStatusField"  ControlMode="Display"  FieldName="ResolutionStatus"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_ResolutionStatus"  ControlMode="Display"  FieldName="ResolutionStatus"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_ResolutionStatus_Description"  FieldName="ResolutionStatus"  /> 
                                          </td>
                                      </tr>
@@ -236,7 +258,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="SupervisorField"  ControlMode="New"  FieldName="Supervisor"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_Supervisor"  ControlMode="New"  FieldName="Supervisor"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_Supervisor_Description"  FieldName="Supervisor"  /> 
                                          </td>
                                      </tr>
@@ -247,7 +269,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="DirectorField"  ControlMode="New"  FieldName="Director"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_Director"  ControlMode="New"  FieldName="Director"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_Director_Description"  FieldName="Director"  /> 
                                          </td>
                                      </tr>
@@ -258,7 +280,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="AGMField"  ControlMode="New"  FieldName="AGM"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_AGM"  ControlMode="New"  FieldName="AGM"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_AGM_Description"  FieldName="AGM"  /> 
                                          </td>
                                      </tr>
@@ -274,7 +296,7 @@
                                                          <img  src="/_layouts/images/blank.gif"  width="1"  height="18"  /> 
                                                      </td> 
                                                       <td  class="ms-toolbar"  nowrap="nowrap"> 
-                                                         <asp:Button ID="printbutton" Text="Print" runat="server" OnClick="printbutton_Click" Visible="true" /> 
+                                                         <asp:Button ID="printButton" Text="Print" runat="server" OnClick="printbutton_Click" Visible="false" /> 
                                                     </td> 
                                                      <td  class="ms-toolbar"  nowrap="nowrap"> 
                                                          <SharePoint:SaveButton  runat="server"  ControlMode="Edit"  ID="savebutton"   /> 

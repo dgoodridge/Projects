@@ -58,13 +58,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FormToolBar FormToolBar1;
         
         /// <summary>
-        /// IncidentReportingDateField control.
+        /// field_IncidentReportingDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField IncidentReportingDateField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_IncidentReportingDate;
         
         /// <summary>
         /// field_IncidenceReportingDate_Description control.
@@ -76,13 +76,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_IncidenceReportingDate_Description;
         
         /// <summary>
-        /// LoggedByField control.
+        /// field_LoggedBy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField LoggedByField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_LoggedBy;
         
         /// <summary>
         /// field_LoggedBy_Description control.
@@ -94,13 +94,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_LoggedBy_Description;
         
         /// <summary>
-        /// JobTitleField control.
+        /// field_JobTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField JobTitleField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_JobTitle;
         
         /// <summary>
         /// field_JobTitle_Description control.
@@ -112,13 +112,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_JobTitle_Description;
         
         /// <summary>
-        /// DepartmentField control.
+        /// field_Department control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField DepartmentField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_Department;
         
         /// <summary>
         /// field_Department_Description control.
@@ -130,13 +130,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_Department_Description;
         
         /// <summary>
-        /// DivisionField control.
+        /// field_Division control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField DivisionField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_Division;
         
         /// <summary>
         /// field_Division_Description control.
@@ -148,13 +148,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_Division_Description;
         
         /// <summary>
-        /// PrimaryNumberField control.
+        /// field_PrimaryNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField PrimaryNumberField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_PrimaryNumber;
         
         /// <summary>
         /// field_PrimaryNumber_Description control.
@@ -166,13 +166,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_PrimaryNumber_Description;
         
         /// <summary>
-        /// CellPhoneField control.
+        /// field_CellPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField CellPhoneField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_CellPhone;
         
         /// <summary>
         /// field_CellPhone_Description control.
@@ -184,13 +184,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_CellPhone_Description;
         
         /// <summary>
-        /// EMailField control.
+        /// field_EMail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField EMailField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_EMail;
         
         /// <summary>
         /// field_EMail_Description control.
@@ -202,13 +202,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_EMail_Description;
         
         /// <summary>
-        /// BusNumberField control.
+        /// field_BusNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField BusNumberField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_BusNumber;
         
         /// <summary>
         /// field_BusNumber_Description control.
@@ -220,13 +220,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_BusNumber_Description;
         
         /// <summary>
-        /// BusRouteNumberField control.
+        /// field_BusRouteNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField BusRouteNumberField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_BusRouteNumber;
         
         /// <summary>
         /// field_BusRouteNumber_Description control.
@@ -238,13 +238,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_BusRouteNumber_Description;
         
         /// <summary>
-        /// BusGarageField control.
+        /// field_BusGarage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField BusGarageField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_BusGarage;
         
         /// <summary>
         /// field_BusGarage_Description control.
@@ -256,13 +256,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_BusGarage_Description;
         
         /// <summary>
-        /// LVEReferencedField control.
+        /// field_LVEReferenced control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField LVEReferencedField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_LVEReferenced;
         
         /// <summary>
         /// field_LVEReferenced_Description control.
@@ -274,13 +274,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_LVEReferenced_Description;
         
         /// <summary>
-        /// IncidentDateField control.
+        /// field_IncidentDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField IncidentDateField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_IncidentDate;
         
         /// <summary>
         /// field_IncidentOccurenceDate_Description control.
@@ -292,13 +292,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_IncidentOccurenceDate_Description;
         
         /// <summary>
-        /// HazardDescriptionField control.
+        /// field_HazardDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField HazardDescriptionField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_HazardDescription;
         
         /// <summary>
         /// field_HazardDescription_Description control.
@@ -310,13 +310,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_HazardDescription_Description;
         
         /// <summary>
-        /// EmployeeRecChangesField control.
+        /// field_EmployeeRecChanges control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField EmployeeRecChangesField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_EmployeeRecChanges;
         
         /// <summary>
         /// field_EmployeeRecChanges_Description control.
@@ -328,13 +328,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_EmployeeRecChanges_Description;
         
         /// <summary>
-        /// ResolutionStatusField control.
+        /// field_ResolutionStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField ResolutionStatusField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_ResolutionStatus;
         
         /// <summary>
         /// field_ResolutionStatus_Description control.
@@ -346,13 +346,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_ResolutionStatus_Description;
         
         /// <summary>
-        /// SupervisorField control.
+        /// field_Supervisor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField SupervisorField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_Supervisor;
         
         /// <summary>
         /// field_Supervisor_Description control.
@@ -364,40 +364,40 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_Supervisor_Description;
         
         /// <summary>
-        /// SupervisorRecChangesField control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField SupervisorRecChangesField;
-        
-        /// <summary>
         /// field_SupervisorRecChanges control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FieldDescription field_SupervisorRecChanges;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_SupervisorRecChanges;
         
         /// <summary>
-        /// InitialContactField control.
+        /// field_SupervisorRecChanges_Description control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField InitialContactField;
+        protected global::Microsoft.SharePoint.WebControls.FieldDescription field_SupervisorRecChanges_Description;
         
         /// <summary>
-        /// ConditionalBreak control.
+        /// field_InitialContact control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel ConditionalBreak;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_InitialContact;
+        
+        /// <summary>
+        /// conditionalBreak control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel conditionalBreak;
         
         /// <summary>
         /// field_InitialContact_Description control.
@@ -418,13 +418,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::System.Web.UI.WebControls.Panel pnlComplete;
         
         /// <summary>
-        /// ResolutionCompleteDiscussionField control.
+        /// field_ResolutionCompleteDiscussion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField ResolutionCompleteDiscussionField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_ResolutionCompleteDiscussion;
         
         /// <summary>
         /// field_ResolutionCompleteDiscussion_Description control.
@@ -436,13 +436,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_ResolutionCompleteDiscussion_Description;
         
         /// <summary>
-        /// DirectorField control.
+        /// field_Director control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField DirectorField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_Director;
         
         /// <summary>
         /// field_Director_Description control.
@@ -454,13 +454,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_Director_Description;
         
         /// <summary>
-        /// DirectorRecChangesField control.
+        /// field_DirectorRecChanges control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField DirectorRecChangesField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_DirectorRecChanges;
         
         /// <summary>
         /// field_DirectorRecChanges_Description control.
@@ -472,13 +472,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_DirectorRecChanges_Description;
         
         /// <summary>
-        /// AGMField control.
+        /// field_AGM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField AGMField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_AGM;
         
         /// <summary>
         /// field_AGM_Description control.
@@ -490,13 +490,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_AGM_Description;
         
         /// <summary>
-        /// AGMRecChangesField control.
+        /// field_AGMRecChanges control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField AGMRecChangesField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_AGMRecChanges;
         
         /// <summary>
         /// field_AGMRecChanges_Description control.
@@ -508,13 +508,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_AGMRecChanges_Description;
         
         /// <summary>
-        /// DelegatedResourceField control.
+        /// field_DelegatedResource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField DelegatedResourceField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_DelegatedResource;
         
         /// <summary>
         /// field_DelegatedResource_Description control.
@@ -526,13 +526,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_DelegatedResource_Description;
         
         /// <summary>
-        /// DelegatedRecChangesField control.
+        /// field_DelegatedRecChanges control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField DelegatedRecChangesField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_DelegatedRecChanges;
         
         /// <summary>
         /// field_DelegatedRecChanges_Description control.
@@ -544,13 +544,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_DelegatedRecChanges_Description;
         
         /// <summary>
-        /// PreHIRACodeField control.
+        /// field_PreHIRACode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField PreHIRACodeField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_PreHIRACode;
         
         /// <summary>
         /// field_PreHIRACode_Description control.
@@ -562,13 +562,13 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_PreHIRACode_Description;
         
         /// <summary>
-        /// PostHIRACodeField control.
+        /// field_PostHIRACode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField PostHIRACodeField;
+        protected global::Microsoft.SharePoint.WebControls.FormField field_PostHIRACode;
         
         /// <summary>
         /// field_PostHIRACode_Description control.

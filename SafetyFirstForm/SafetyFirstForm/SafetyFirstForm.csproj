@@ -71,8 +71,12 @@
       <DependentUpon>NewSafetyFirstForm.aspx.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Safety First Report\Safety First Report Instance\SafetyFirstEventReceiver\SafetyFirstEventReceiver.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="en-us\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bea0b959-f10c-4e60-9060-810f67d4f060}</SharePointProjectItemId>
+    </None>
     <None Include="Features\SafetyFirstFormFeature\SafetyFirstFormFeature.feature">
       <FeatureId>{30618776-85d4-4cec-a650-9b46e26f64a1}</FeatureId>
     </None>
@@ -86,6 +90,9 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="Safety First Report\Safety First Report Instance\SafetyFirstEventReceiver\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{38d80d80-881c-4866-8b40-7e8edb76478a}</SharePointProjectItemId>
+    </None>
     <None Include="Safety First Report\Safety First Report Instance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9a76daf2-3a8a-4b21-ae6a-d3aead7e7e4e}</SharePointProjectItemId>
     </None>
@@ -95,6 +102,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="en-us\jquery-2.0.3.min.js" />
     <Content Include="Features\SafetyFirstFormFeature\SafetyFirstFormFeature.Template.xml">
       <DependentUpon>SafetyFirstFormFeature.feature</DependentUpon>
     </Content>
@@ -104,6 +112,7 @@
     <Content Include="Safety First Report\NewSafetyFirstForm.aspx" />
     <Content Include="Safety First Report\Elements.xml" />
     <Content Include="Safety First Report\Safety First Report Instance\Elements.xml" />
+    <Content Include="Safety First Report\Safety First Report Instance\SafetyFirstEventReceiver\Elements.xml" />
     <Content Include="Safety First Report\Schema.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
