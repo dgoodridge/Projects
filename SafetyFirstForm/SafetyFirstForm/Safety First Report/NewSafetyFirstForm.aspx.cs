@@ -9,16 +9,7 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string vid = Request.QueryString["vid"];
-            if (!Page.IsPostBack)
-            {
-                switch (vid)
-                {
-                    case null:
-                        hideMe.Visible = false;
-                        break;
-                }
-            }
+            
         }
 
         //protected void AnonymousReportingField_ValueChanged(object sender, EventArgs e)

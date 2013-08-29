@@ -58,15 +58,6 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::System.Web.UI.WebControls.Panel PrintForm;
         
         /// <summary>
-        /// hideMe control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel hideMe;
-        
-        /// <summary>
         /// FormToolBar1 control.
         /// </summary>
         /// <remarks>

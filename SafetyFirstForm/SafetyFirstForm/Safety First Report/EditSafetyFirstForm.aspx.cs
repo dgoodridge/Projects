@@ -35,10 +35,6 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm
                         conditionalBreak.Visible = true;
                         break;
                     case "Supervisor":
-                        //The following is my attempt to change control mode. Got it in 4 tries!
-                        //SupervisorRecChangesField.ControlMode = Display;
-                        //SupervisorRecChangesField.ControlMode = "Display";
-                        //SupervisorRecChangesField.ControlMode.Equals["Display"];
                         field_ResolutionStatus.ControlMode = SPControlMode.Edit;
                         field_SupervisorRecChanges.ControlMode = SPControlMode.Edit;
                         field_InitialContact.ControlMode = SPControlMode.Edit;
@@ -63,8 +59,36 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm
                         field_DelegatedRecChanges.ControlMode = SPControlMode.Edit;
                         break;
                     case "Admin":
-                        //Make all fields editable - conversely, make editform with no vid uneditable
-
+                        //Make all fields editable
+                        field_AGM.ControlMode = SPControlMode.Edit;
+                        field_AGMRecChanges.ControlMode = SPControlMode.Edit;
+                        field_BusGarage.ControlMode = SPControlMode.Edit;
+                        field_BusNumber.ControlMode = SPControlMode.Edit;
+                        field_BusRouteNumber.ControlMode = SPControlMode.Edit;
+                        field_CellPhone.ControlMode = SPControlMode.Edit;
+                        field_DelegatedRecChanges.ControlMode = SPControlMode.Edit;
+                        field_DelegatedResource.ControlMode = SPControlMode.Edit;
+                        field_Department.ControlMode = SPControlMode.Edit;
+                        field_Director.ControlMode = SPControlMode.Edit;
+                        field_DirectorRecChanges.ControlMode = SPControlMode.Edit;
+                        field_Division.ControlMode = SPControlMode.Edit;
+                        field_EMail.ControlMode = SPControlMode.Edit;
+                        field_EmployeeRecChanges.ControlMode = SPControlMode.Edit;
+                        field_HazardDescription.ControlMode = SPControlMode.Edit;
+                        field_IncidentDate.ControlMode = SPControlMode.Edit;
+                        field_IncidentReportingDate.ControlMode = SPControlMode.Edit;
+                        field_InitialContact.ControlMode = SPControlMode.Edit;
+                        field_JobTitle.ControlMode = SPControlMode.Edit;
+                        field_LoggedBy.ControlMode = SPControlMode.Edit;
+                        field_LVEReferenced.ControlMode = SPControlMode.Edit;
+                        field_PostHIRACode.ControlMode = SPControlMode.Edit;
+                        field_PreHIRACode.ControlMode = SPControlMode.Edit;
+                        field_PrimaryNumber.ControlMode = SPControlMode.Edit;
+                        field_ResolutionCompleteDiscussion.ControlMode = SPControlMode.Edit;
+                        field_ResolutionStatus.ControlMode = SPControlMode.Edit;
+                        field_Supervisor.ControlMode = SPControlMode.Edit;
+                        field_SupervisorRecChanges.ControlMode = SPControlMode.Edit;
+                        break;
                         //foreach (Control control in formContext.FieldControlCollection)
                         //foreach (SPControlMode control in SPContext.Current.FormContext.FieldControlCollection)
                         //foreach (Control control in SPContext.Current.FormContext.FieldControlCollection)
@@ -73,7 +97,6 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm
                         //    {
                         //        BaseFieldControl baseField = (BaseFieldControl)control;
                         //        baseField.ControlMode = SPControlMode.Edit;
-
                         //    }
                         //}
 
@@ -94,20 +117,8 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm
                         //        bfc.Value = "Edit";
                         //    }
                         //}
-                        
-                        break;
                 }
             }
-            
-        }
-        // This does not work. Need JS?
-        protected void ResolutionStatusField_ValueChanged(object sender, EventArgs e)
-        {
-
-            //if (ResolutionStatusField.Value.ToString() == "Closed")
-            //{
-            //    pnlComplete.Visible = true;
-            //}
         }
     }
 }

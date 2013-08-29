@@ -212,7 +212,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_ResolutionStatus"  ControlMode="Display"  FieldName="ResolutionStatus" OnValueChanged="ResolutionStatusField_ValueChanged"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_ResolutionStatus"  ControlMode="Display"  FieldName="ResolutionStatus" /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_ResolutionStatus_Description"  FieldName="ResolutionStatus"  /> 
                                          </td>
                                      </tr>

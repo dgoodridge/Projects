@@ -33,13 +33,18 @@
      </ZoneTemplate>
 </WebPartPages:WebPartZone> 
           <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1.js"></script>
+          <%--<script type="text/javascript" src="http://sp2013devlab/sites/martatask/SiteAssets/jquery-1.6.1.js"></script>--%>
           <%--<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1-vsdoc.js"></script>--%>
-          <script language="ecmascript" type="text/ecmascript">
+          <script type="text/javascript">
               
               $(document).ready(function () {
-                  $('select[id*=field_AnonymousReporting').change(function () {
+                  alert("Hello JQuery");
+                  $("input[title='Anonymous Reporting']").change(function () {
+                  //$('select[id*=field_AnonymousReporting').change(function () {
+                      alert("found field");
                       var checked = this.is(":checked");
                       if (checked) {
+                          alert("Box checked");
                           $("#printButton").show();
                       }
                   });
@@ -50,7 +55,7 @@
           <!-- Begin Custom Form -->
           <!-- ikarstein: Insert such a structure for each field you want to show on you page --> 
           <asp:Panel ID="PrintForm" runat="server">      
-              <asp:Panel ID="hideMe" runat="server"><h1>I'm showing</h1></asp:Panel>
+             
           <table id="agendaFormTable"  border="0"  width="100%"> 
                      <tr> 
                          <td  class="ms-toolbar"  nowrap="nowrap"> 
