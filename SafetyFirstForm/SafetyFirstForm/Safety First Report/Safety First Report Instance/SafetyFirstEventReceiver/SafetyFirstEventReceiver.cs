@@ -6,39 +6,39 @@ using Microsoft.SharePoint.Workflow;
 
 namespace SafetyFirstForm.Safety_First_Report.Safety_First_Report_Instance.SafetyFirstEventReceiver
 {
-    public class AddBusinessDays
-    {
-        DateTime startDate = DateTime.Now;        
+    //public class AddBusinessDays
+    //{
+    //    DateTime startDate = DateTime.Now;        
  
-        public System.DateTime CalculateTenBusinessDaysFromInputDate(System.DateTime StartDate)
-        {
-            //This simply adds at least 2 full weeks to the start date.
+    //    public System.DateTime CalculateTenBusinessDaysFromInputDate(System.DateTime StartDate)
+    //    {
+    //        //This simply adds at least 2 full weeks to the start date.
 
-            switch (StartDate.DayOfWeek)
-            {
-                case DayOfWeek.Sunday:
-                    //if the start date is not a sunday you need to add 
-                    //1 day to push it to a monday that is why the number is 15.
-                    return StartDate.AddDays(15);
-                    break;
-                case DayOfWeek.Monday:
-                case DayOfWeek.Tuesday:
-                case DayOfWeek.Wednesday:
-                case DayOfWeek.Thursday:
-                case DayOfWeek.Friday:
-                    //if the start date is any other day then just add 14 days to the start date.
-                    return StartDate.AddDays(14);
-                    break;
-                case DayOfWeek.Saturday:
-                    //if the start date is on a Saturday you need to add 
-                    //2 days to push it to a monday that is why the number is 16.
-                    return StartDate.AddDays(16);
-                    break;
-                default:
-                    return StartDate;
-            }
-        }
-    }
+    //        switch (StartDate.DayOfWeek)
+    //        {
+    //            case DayOfWeek.Sunday:
+    //                //if the start date is not a sunday you need to add 
+    //                //1 day to push it to a monday that is why the number is 15.
+    //                return StartDate.AddDays(15);
+    //                break;
+    //            case DayOfWeek.Monday:
+    //            case DayOfWeek.Tuesday:
+    //            case DayOfWeek.Wednesday:
+    //            case DayOfWeek.Thursday:
+    //            case DayOfWeek.Friday:
+    //                //if the start date is any other day then just add 14 days to the start date.
+    //                return StartDate.AddDays(14);
+    //                break;
+    //            case DayOfWeek.Saturday:
+    //                //if the start date is on a Saturday you need to add 
+    //                //2 days to push it to a monday that is why the number is 16.
+    //                return StartDate.AddDays(16);
+    //                break;
+    //            default:
+    //                return StartDate;
+    //        }
+    //    }
+    //}
     /// <summary>
     /// List Item Events
     /// </summary>
@@ -102,6 +102,7 @@ namespace SafetyFirstForm.Safety_First_Report.Safety_First_Report_Instance.Safet
                     case DayOfWeek.Sunday:
                         dueDate = startDate.AddDays(40);
                         break;
+                    
                 }
         }
 

@@ -15,6 +15,7 @@
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <SandboxedSolution>False</SandboxedSolution>
     <PostDeploymentCommand>xcopy /y "%24%28TargetDir%29SafetyFirstForm.wsp" "C:\Users\Administrator\Documents\Visual Studio 2012\Projects\Solutions"</PostDeploymentCommand>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -112,7 +113,9 @@
     <Content Include="Safety First Report\NewSafetyFirstForm.aspx" />
     <Content Include="Safety First Report\Elements.xml" />
     <Content Include="Safety First Report\Safety First Report Instance\Elements.xml" />
-    <Content Include="Safety First Report\Safety First Report Instance\SafetyFirstEventReceiver\Elements.xml" />
+    <Content Include="Safety First Report\Safety First Report Instance\SafetyFirstEventReceiver\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Safety First Report\Schema.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
