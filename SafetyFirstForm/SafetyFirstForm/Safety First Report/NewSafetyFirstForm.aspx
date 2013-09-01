@@ -32,21 +32,26 @@
 	 <ZoneTemplate>
      </ZoneTemplate>
 </WebPartPages:WebPartZone> 
-          <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1.js"></script>
-          <%--<script type="text/javascript" src="http://sp2013devlab/sites/martatask/SiteAssets/jquery-1.6.1.js"></script>--%>
+          <%--<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1.js"></script>--%>
+          <script type="text/javascript" src="../../SiteAssets/jquery-1.6.1.js"></script>
           <%--<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1-vsdoc.js"></script>--%>
           <script type="text/javascript">
               
               $(document).ready(function () {
-                  alert("Hello JQuery");
-                  $("input[title='Anonymous Reporting']").change(function () {
+                  //$("input[ID*='printButton']").attr("Visible", false);
+                  $("input[ID*='printButton']").hide();
+                  //alert("Hello JQuery");
+                  //$("input[ID*='field_AnonymousReporting']").change(function () {
                   //$('select[id*=field_AnonymousReporting').change(function () {
-                      alert("found field");
-                      var checked = this.is(":checked");
-                      if (checked) {
+                  $("input[ID*='field_AnonymousReporting']").click(function() {
+                      //alert("found field");
+                      //var checked = this.is(':checked');
+                      //if ($("input[ID*='field_AnonymousReporting']")) {
                           alert("Box checked");
-                          $("#printButton").show();
-                      }
+                          $("input[ID*='printButton']").show();
+                          $("input[ID*='savebutton']").hide();
+                          $("input[ID*='LoggedBy']").hide();
+                      //}
                   });
               });
 
@@ -55,7 +60,6 @@
           <!-- Begin Custom Form -->
           <!-- ikarstein: Insert such a structure for each field you want to show on you page --> 
           <asp:Panel ID="PrintForm" runat="server">      
-             
           <table id="agendaFormTable"  border="0"  width="100%"> 
                      <tr> 
                          <td  class="ms-toolbar"  nowrap="nowrap"> 
@@ -301,7 +305,7 @@
                                                          <img  src="/_layouts/images/blank.gif"  width="1"  height="18"  /> 
                                                      </td> 
                                                       <td  class="ms-toolbar"  nowrap="nowrap"> 
-                                                         <asp:Button ID="printButton" Text="Print" runat="server" OnClick="printbutton_Click" Visible="false" /> 
+                                                         <asp:Button ID="printButton" Text="Print" runat="server" OnClick="printbutton_Click" /> 
                                                     </td> 
                                                      <td  class="ms-toolbar"  nowrap="nowrap"> 
                                                          <SharePoint:SaveButton  runat="server"  ControlMode="Edit"  ID="savebutton"   /> 
