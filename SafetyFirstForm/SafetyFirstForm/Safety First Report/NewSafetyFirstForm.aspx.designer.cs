@@ -49,15 +49,6 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebPartPages.WebPartZone Main;
         
         /// <summary>
-        /// PrintForm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PrintForm;
-        
-        /// <summary>
         /// FormToolBar1 control.
         /// </summary>
         /// <remarks>
@@ -65,15 +56,6 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Microsoft.SharePoint.WebControls.FormToolBar FormToolBar1;
-        
-        /// <summary>
-        /// pnlSupervisor control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlSupervisor;
         
         /// <summary>
         /// field_IncidentReportingDate control.
@@ -110,6 +92,15 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_AnonymousReporting_Description;
+        
+        /// <summary>
+        /// anonymousSubmission control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel anonymousSubmission;
         
         /// <summary>
         /// field_LoggedBy control.

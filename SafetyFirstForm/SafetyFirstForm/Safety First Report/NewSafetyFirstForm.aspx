@@ -33,25 +33,26 @@
      </ZoneTemplate>
 </WebPartPages:WebPartZone> 
           <%--<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1.js"></script>--%>
-          <script type="text/javascript" src="../../SiteAssets/jquery-1.6.1.js"></script>
-          <%--<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1-vsdoc.js"></script>--%>
+          <script type="text/javascript" src="../../SiteAssets/jquery.js"></script>
+          <script type="text/javascript" src="../../SiteAssets/jquery-vsdoc.js"></script>
           <script type="text/javascript">
               
               $(document).ready(function () {
-                  //$("input[ID*='printButton']").attr("Visible", false);
-                  $("input[ID*='printButton']").hide();
-                  //alert("Hello JQuery");
-                  //$("input[ID*='field_AnonymousReporting']").change(function () {
-                  //$('select[id*=field_AnonymousReporting').change(function () {
-                  $("input[ID*='field_AnonymousReporting']").click(function() {
-                      //alert("found field");
-                      //var checked = this.is(':checked');
-                      //if ($("input[ID*='field_AnonymousReporting']")) {
+                  //Hide print button until necessary
+                  $("input[id*='printButton']").hide();
+
+                  $("input[id*='field_AnonymousReporting']").click(function() {
+                      if ($("input[id*='field_AnonymousReporting']").is(':checked')) {
                           alert("Box checked");
-                          $("input[ID*='printButton']").show();
-                          $("input[ID*='savebutton']").hide();
-                          $("input[ID*='LoggedBy']").hide();
-                      //}
+                          $("input[id*='printButton']").show();
+                          $("input[id*='savebutton']").hide();
+                          $('#ctl00_PlaceHolderMain_anonymousSubmission').hide(); //not finding div
+                      } else {
+                          alert("Box unchecked");
+                          $("input[id*='printButton']").hide();
+                          $("input[id*='savebutton']").show();
+                          $('#ctl00_PlaceHolderMain_anonymousSubmission').show(); //not finding div
+                      }
                   });
               });
 
@@ -59,7 +60,7 @@
 
           <!-- Begin Custom Form -->
           <!-- ikarstein: Insert such a structure for each field you want to show on you page --> 
-          <asp:Panel ID="PrintForm" runat="server">      
+          <div ID="PrintForm">      
           <table id="agendaFormTable"  border="0"  width="100%"> 
                      <tr> 
                          <td  class="ms-toolbar"  nowrap="nowrap"> 
@@ -70,8 +71,6 @@
                          <td> 
                              <span  id="part1">  <!-- ikarstein: This line is important for "Attachments" --> 
                                  <table  border="0"  cellspacing="0"  width="100%"> 
-                                    <asp:Panel ID="pnlSupervisor" runat="server">
-                                     
                                      <tr> 
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
@@ -94,7 +93,10 @@
                                              <SharePoint:FieldDescription  runat="server"  ID="field_AnonymousReporting_Description"  FieldName="AnonymousReporting" /> 
                                          </td>
                                      </tr> 
-                                     <tr>
+
+                                     <asp:Panel ID="anonymousSubmission" runat="server">
+                                         
+                                     <tr id="loggedByRow">
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
                                                  <nobr>Logged By<span class="ms-formvalidation"> *</span></nobr> 
@@ -105,7 +107,6 @@
                                              <SharePoint:FieldDescription  runat="server"  ID="field_LoggedBy_Description"  FieldName="LoggedBy" /> 
                                          </td>
                                      </tr>
-                                         </asp:Panel>
                                      <tr>
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
@@ -167,6 +168,9 @@
                                                  <nobr>E-Mail<span class="ms-formvalidation"> *</span></nobr> 
                                              </h3> 
                                          </td>
+                                         
+                                         </asp:Panel>
+
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
                                              <SharePoint:FormField  runat="server"  ID="field_EMail"  ControlMode="New"  FieldName="EMail"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_EMail_Description"  FieldName="EMail"  /> 
@@ -294,6 +298,7 @@
                                          </td>
                                      </tr>
                                      </asp:Panel>
+              </div>
                                      
 
                                      <!-- ikarstein: Add this table for "Save" and "Cancel" buttons / BEGIN --> 
