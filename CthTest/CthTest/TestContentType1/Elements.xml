@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01007258E7E70BE44E46BC62DA5F5E0D0C23" Name="TestContentType1" Group="Test Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{48d8b771-2109-4c1d-870d-6500eaf336f5}" DisplayName="Test Column 1" Required="FALSE" Name="TestColumn1" />
+      <FieldRef ID="{5f14cdef-f903-478e-84be-d60602784522}" DisplayName="Test Column 2" Required="FALSE" Name="TestColumn2" />
+      <FieldRef ID="{F55DE332-074E-4e71-A71A-B90ABFAD51AE}" DisplayName="$Resources:core,Assistants_Phone_OL;" Name="AssistantNumber" Sealed="TRUE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

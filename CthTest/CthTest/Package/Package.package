@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5bff6d47-d591-487b-afe8-5c9c745ba810" solutionId="5bff6d47-d591-487b-afe8-5c9c745ba810" resetWebServer="false" sharePointProductVersion="15.0" name="CthTest" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="a248b054-2795-42c7-ae88-f91be51203c4" />
+  </features>
+</package>

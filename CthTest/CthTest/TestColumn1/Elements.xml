@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{48d8b771-2109-4c1d-870d-6500eaf336f5}"
+       Name="TestColumn1"
+       DisplayName="Test Column 1"
+       Type="Text"
+       Required="FALSE"
+       Group="Test Site Columns">
+  </Field>
+</Elements>
