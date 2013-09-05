@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <Module Name="HIRAChart"
+  <Module Name="JQuery"
           Url="SiteAssets">
-    <File Path="HIRAChart\HIRAChart.png" 
-          Url="HIRAChart.png"
+    <File Path="JQuery\jquery.js"
+          Url="jquery.js"
           Type="GhostableInLibrary"
-          IgnoreIfAlreadyExists="TRUE"/>
+          IgnoreIfAlreadyExists="TRUE" />
   </Module>
 </Elements>

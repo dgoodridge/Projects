@@ -32,9 +32,10 @@
 	 <ZoneTemplate>
      </ZoneTemplate>
 </WebPartPages:WebPartZone> 
-          <%--<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1.js"></script>--%>
           <script type="text/javascript" src="../../SiteAssets/jquery.js"></script>
+          
           <script type="text/javascript" src="../../SiteAssets/jquery-vsdoc.js"></script>
+          
           <script type="text/javascript">
               
               $(document).ready(function () {
@@ -43,15 +44,15 @@
 
                   $("input[id*='field_AnonymousReporting']").click(function() {
                       if ($("input[id*='field_AnonymousReporting']").is(':checked')) {
-                          alert("Box checked");
+                          //alert("Box checked");
                           $("input[id*='printButton']").show();
                           $("input[id*='savebutton']").hide();
-                          $('#ctl00_PlaceHolderMain_anonymousSubmission').hide(); //not finding div
+                          $('.anonymousSubmission').hide();
                       } else {
-                          alert("Box unchecked");
+                          //alert("Box unchecked");
                           $("input[id*='printButton']").hide();
                           $("input[id*='savebutton']").show();
-                          $('#ctl00_PlaceHolderMain_anonymousSubmission').show(); //not finding div
+                          $('.anonymousSubmission').show();
                       }
                   });
               });
@@ -60,7 +61,7 @@
 
           <!-- Begin Custom Form -->
           <!-- ikarstein: Insert such a structure for each field you want to show on you page --> 
-          <div ID="PrintForm">      
+          <div id="PrintForm">      
           <table id="agendaFormTable"  border="0"  width="100%"> 
                      <tr> 
                          <td  class="ms-toolbar"  nowrap="nowrap"> 
@@ -69,7 +70,8 @@
                      </tr> 
                      <tr> 
                          <td> 
-                             <span  id="part1">  <!-- ikarstein: This line is important for "Attachments" --> 
+                             <span  id="part1">  <!-- ikarstein: This line is important for "Attachments" -->
+
                                  <table  border="0"  cellspacing="0"  width="100%"> 
                                      <tr> 
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
@@ -93,10 +95,8 @@
                                              <SharePoint:FieldDescription  runat="server"  ID="field_AnonymousReporting_Description"  FieldName="AnonymousReporting" /> 
                                          </td>
                                      </tr> 
-
-                                     <asp:Panel ID="anonymousSubmission" runat="server">
                                          
-                                     <tr id="loggedByRow">
+                                     <tr id="loggedByRow" class="anonymousSubmission">
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
                                                  <nobr>Logged By<span class="ms-formvalidation"> *</span></nobr> 
@@ -107,7 +107,7 @@
                                              <SharePoint:FieldDescription  runat="server"  ID="field_LoggedBy_Description"  FieldName="LoggedBy" /> 
                                          </td>
                                      </tr>
-                                     <tr>
+                                     <tr class="anonymousSubmission">
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
                                                  <nobr>Job Title</nobr> 
@@ -118,7 +118,7 @@
                                              <SharePoint:FieldDescription  runat="server"  ID="field_JobTitle_Description"  FieldName="JobTitle"  /> 
                                          </td>
                                      </tr>
-                                     <tr>
+                                     <tr class="anonymousSubmission">
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
                                                  <nobr>Department</nobr> 
@@ -129,7 +129,7 @@
                                              <SharePoint:FieldDescription  runat="server"  ID="field_Department_Description"  FieldName="ol_Department"  /> 
                                          </td>
                                      </tr>
-                                     <tr>
+                                     <tr class="anonymousSubmission">
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
                                                  <nobr>Division/Work Location</nobr> 
@@ -140,7 +140,7 @@
                                              <SharePoint:FieldDescription  runat="server"  ID="field_Division_Description"  FieldName="Division"  /> 
                                          </td>
                                      </tr>
-                                     <tr>
+                                     <tr class="anonymousSubmission">
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
                                                  <nobr>Primary Phone<span class="ms-formvalidation"> *</span></nobr> 
@@ -151,7 +151,7 @@
                                              <SharePoint:FieldDescription  runat="server"  ID="field_PrimaryNumber_Description"  FieldName="PhoneNumber"  /> 
                                          </td>
                                      </tr>
-                                     <tr>
+                                     <tr class="anonymousSubmission">
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
                                                  <nobr>Mobile Phone</nobr> 
@@ -162,15 +162,12 @@
                                              <SharePoint:FieldDescription  runat="server"  ID="field_CellPhone_Description"  FieldName="CellPhone"  /> 
                                          </td>
                                      </tr>
-                                     <tr>
+                                     <tr class="anonymousSubmission">
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
                                                  <nobr>E-Mail<span class="ms-formvalidation"> *</span></nobr> 
                                              </h3> 
                                          </td>
-                                         
-                                         </asp:Panel>
-
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
                                              <SharePoint:FormField  runat="server"  ID="field_EMail"  ControlMode="New"  FieldName="EMail"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_EMail_Description"  FieldName="EMail"  /> 
@@ -297,7 +294,7 @@
                                              <SharePoint:FieldDescription  runat="server"  ID="field_AGM_Description"  FieldName="AGM"  /> 
                                          </td>
                                      </tr>
-                                     </asp:Panel>
+                                     
               </div>
                                      
 

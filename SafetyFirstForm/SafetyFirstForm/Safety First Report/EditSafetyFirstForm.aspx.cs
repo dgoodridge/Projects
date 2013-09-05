@@ -89,34 +89,6 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm
                         field_Supervisor.ControlMode = SPControlMode.Edit;
                         field_SupervisorRecChanges.ControlMode = SPControlMode.Edit;
                         break;
-                        //foreach (Control control in formContext.FieldControlCollection)
-                        //foreach (SPControlMode control in SPContext.Current.FormContext.FieldControlCollection)
-                        //foreach (Control control in SPContext.Current.FormContext.FieldControlCollection)
-                        //{
-                        //    if (control is BaseFieldControl)
-                        //    {
-                        //        BaseFieldControl baseField = (BaseFieldControl)control;
-                        //        baseField.ControlMode = SPControlMode.Edit;
-                        //    }
-                        //}
-
-                        //SPSite site = SPContext.Current.Site;
-                        //SPWeb oWeb = site.OpenWeb();
-                        //SPFormContext formContext = SPContext.Current.FormContext;
-                        //SPList oList = oWeb.Lists["Safety First Report"];
-                        //SPListItemCollection listItems = oList.Items;
-                        //SPFieldCollection fieldCollection = oList.Fields;
-                        //var mode = SPControlMode.Edit;
-                        //foreach (SPField field in fieldCollection)
-                        //{
-                        //    SPContext renderContext = SPContext.GetContext(HttpContext.Current, itemId,)
-                        //    BaseFieldControl bfc = field.FieldRenderingControl;
-                        //    //string fieldID = field.Id.ToString();
-                        //    if (field.FieldRenderingControl.ToString() == "Display")
-                        //    {
-                        //        bfc.Value = "Edit";
-                        //    }
-                        //}
                 }
             }
         }

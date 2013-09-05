@@ -94,15 +94,6 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_AnonymousReporting_Description;
         
         /// <summary>
-        /// anonymousSubmission control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel anonymousSubmission;
-        
-        /// <summary>
         /// field_LoggedBy control.
         /// </summary>
         /// <remarks>

@@ -43,11 +43,22 @@
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Activities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.DesignTime.Activities, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.WorkflowActions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.Activities" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Activities" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
@@ -72,7 +83,7 @@
       <DependentUpon>NewSafetyFirstForm.aspx.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Safety First Report\Safety First Report Instance\SafetyFirstEventReceiver\SafetyFirstEventReceiver.cs" />
+    <Compile Include="Safety First Report\SafetyFirstEventReceiver\SafetyFirstEventReceiver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="en-us\SharePointProjectItem.spdata">
@@ -85,13 +96,16 @@
     <None Include="Modules\HIRAChart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{40ad8050-40b7-4953-b59f-15400f91bcc0}</SharePointProjectItemId>
     </None>
+    <None Include="Modules\JQuery\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fa1938cb-0979-4a31-94ec-02a8595e855b}</SharePointProjectItemId>
+    </None>
     <None Include="Package\Package.package">
       <PackageId>{8c619f85-fada-436b-b76b-39aeeb10cf18}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="Safety First Report\Safety First Report Instance\SafetyFirstEventReceiver\SharePointProjectItem.spdata">
+    <None Include="Safety First Report\SafetyFirstEventReceiver\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{38d80d80-881c-4866-8b40-7e8edb76478a}</SharePointProjectItemId>
     </None>
     <None Include="Safety First Report\Safety First Report Instance\SharePointProjectItem.spdata">
@@ -101,19 +115,25 @@
       <SharePointProjectItemId>{a0b0f496-d41c-41f5-8313-1f6253e8bda2}</SharePointProjectItemId>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="en-us\jquery-2.0.3.min.js" />
     <Content Include="Features\SafetyFirstFormFeature\SafetyFirstFormFeature.Template.xml">
       <DependentUpon>SafetyFirstFormFeature.feature</DependentUpon>
     </Content>
-    <Content Include="Modules\HIRAChart\Elements.xml" />
+    <Content Include="Modules\HIRAChart\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Modules\HIRAChart\HIRAChart.png" />
+    <Content Include="Modules\JQuery\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\JQuery\jquery.js" />
+    <Content Include="Modules\JQuery\Sample.txt" />
     <Content Include="Safety First Report\EditSafetyFirstForm.aspx" />
     <Content Include="Safety First Report\NewSafetyFirstForm.aspx" />
     <Content Include="Safety First Report\Elements.xml" />
     <Content Include="Safety First Report\Safety First Report Instance\Elements.xml" />
-    <Content Include="Safety First Report\Safety First Report Instance\SafetyFirstEventReceiver\Elements.xml">
+    <Content Include="Safety First Report\SafetyFirstEventReceiver\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Safety First Report\Schema.xml" />
