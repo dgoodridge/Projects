@@ -4,7 +4,7 @@
        ID="{8dc66793-e123-43b2-93c2-720484f2bd3b}"
        Name="AnonymousReporting"
        DisplayName="Anonymous Reporting"
-       Description="Check this box if you would like to print this form and submit anonymously to your supervisor"
+       Description="Check this box if you would like to print this form and submit anonymously to an Office of Safety or ATU Representative"
        Type="Boolean"
        Required="FALSE"
        Group="MARTA Site Columns">

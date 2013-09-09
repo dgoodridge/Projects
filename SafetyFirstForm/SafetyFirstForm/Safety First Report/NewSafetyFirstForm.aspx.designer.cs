@@ -76,24 +76,6 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_IncidentReportingDate_Description;
         
         /// <summary>
-        /// field_AnonymousReporting control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FormField field_AnonymousReporting;
-        
-        /// <summary>
-        /// field_AnonymousReporting_Description control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Microsoft.SharePoint.WebControls.FieldDescription field_AnonymousReporting_Description;
-        
-        /// <summary>
         /// field_LoggedBy control.
         /// </summary>
         /// <remarks>
@@ -416,6 +398,24 @@ namespace SafetyFirstForm.Layouts.SafetyFirstForm {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Microsoft.SharePoint.WebControls.FieldDescription field_AGM_Description;
+        
+        /// <summary>
+        /// field_AnonymousReporting control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Microsoft.SharePoint.WebControls.FormField field_AnonymousReporting;
+        
+        /// <summary>
+        /// field_AnonymousReporting_Description control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Microsoft.SharePoint.WebControls.FieldDescription field_AnonymousReporting_Description;
         
         /// <summary>
         /// printButton control.

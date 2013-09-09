@@ -212,7 +212,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_ResolutionStatus"  ControlMode="Display"  FieldName="ResolutionStatus" /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_ResolutionStatus"  ControlMode="Edit"  FieldName="ResolutionStatus" /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_ResolutionStatus_Description"  FieldName="ResolutionStatus"  /> 
                                          </td>
                                      </tr>
@@ -223,7 +223,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_Supervisor"  ControlMode="Display"  FieldName="Supervisor"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_Supervisor"  ControlMode="Edit"  FieldName="Supervisor"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_Supervisor_Description"  FieldName="Supervisor"  /> 
                                          </td>
                                      </tr>
@@ -234,7 +234,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_SupervisorRecChanges"  ControlMode="Display"  FieldName="SupervisorRecChanges" /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_SupervisorRecChanges"  ControlMode="Edit"  FieldName="SupervisorRecChanges" /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_SupervisorRecChanges_Description"  FieldName="SupervisorRecChanges"  /> 
                                          </td>
                                      </tr>
@@ -245,7 +245,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_InitialContact"  ControlMode="Display"  FieldName="InitialContact"  /> <asp:panel ID="conditionalBreak" runat="server" visible="true"></br></asp:panel> 
+                                             <SharePoint:FormField  runat="server"  ID="field_InitialContact"  ControlMode="Edit"  FieldName="InitialContact"  /> <asp:panel ID="conditionalBreak" runat="server" visible="true"></br></asp:panel> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_InitialContact_Description"  FieldName="InitialContact"  /> 
                                          </td>
                                      </tr>
@@ -258,7 +258,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_ResolutionCompleteDiscussion"  ControlMode="Display"  FieldName="ResolutionCompleteDiscussion"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_ResolutionCompleteDiscussion"  ControlMode="Edit"  FieldName="ResolutionCompleteDiscussion"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_ResolutionCompleteDiscussion_Description"  FieldName="ResolutionCompleteDiscussion"  /> 
                                          </td>
                                      </tr>
@@ -269,7 +269,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_Director"  ControlMode="Display"  FieldName="Director"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_Director"  ControlMode="Edit"  FieldName="Director"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_Director_Description"  FieldName="Director"  /> 
                                          </td>
                                      </tr>
@@ -280,7 +280,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_DirectorRecChanges"  ControlMode="Display"  FieldName="DirectorRecChanges"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_DirectorRecChanges"  ControlMode="Edit"  FieldName="DirectorRecChanges"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_DirectorRecChanges_Description"  FieldName="DirectorRecChanges"  /> 
                                          </td>
                                      </tr>
@@ -291,7 +291,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_AGM"  ControlMode="Display"  FieldName="AGM"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_AGM"  ControlMode="Edit"  FieldName="AGM"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_AGM_Description"  FieldName="AGM"  /> 
                                          </td>
                                      </tr>
@@ -302,7 +302,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_AGMRecChanges"  ControlMode="Display"  FieldName="AGMRecChanges"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_AGMRecChanges"  ControlMode="Edit"  FieldName="AGMRecChanges"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_AGMRecChanges_Description"  FieldName="AGMRecChanges"  /> 
                                          </td>
                                      </tr>
@@ -313,7 +313,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_DelegatedResource"  ControlMode="Display"  FieldName="DelegatedResource"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_DelegatedResource"  ControlMode="Edit"  FieldName="DelegatedResource"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_DelegatedResource_Description"  FieldName="DelegatedResource"  /> 
                                          </td>
                                      </tr>
@@ -324,7 +324,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_DelegatedRecChanges"  ControlMode="Display"  FieldName="DelegatedRecChanges"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_DelegatedRecChanges"  ControlMode="Edit"  FieldName="DelegatedRecChanges"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_DelegatedRecChanges_Description"  FieldName="DelegatedRecChanges"  /> 
                                          </td>
                                      </tr>
@@ -335,7 +335,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_PreHIRACode"  ControlMode="Display"  FieldName="PreHIRACode"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_PreHIRACode"  ControlMode="Edit"  FieldName="PreHIRACode"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_PreHIRACode_Description"  FieldName="PreHIRACode"  /> 
                                          </td>
                                      </tr>
@@ -346,7 +346,7 @@
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_PostHIRACode"  ControlMode="Display"  FieldName="PostHIRACode"  /> 
+                                             <SharePoint:FormField  runat="server"  ID="field_PostHIRACode"  ControlMode="Edit"  FieldName="PostHIRACode"  /> 
                                              <SharePoint:FieldDescription  runat="server"  ID="field_PostHIRACode_Description"  FieldName="PostHIRACode"  /> 
                                          </td>
                                      </tr>

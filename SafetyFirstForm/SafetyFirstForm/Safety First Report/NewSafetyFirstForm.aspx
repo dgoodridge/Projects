@@ -84,17 +84,6 @@
                                              <SharePoint:FieldDescription  runat="server"  ID="field_IncidentReportingDate_Description"  FieldName="IncidentReportingDate" /> 
                                          </td> 
                                      </tr> 
-                                     <tr>
-                                         <td  width="190px"  valign="top"  class="ms-formlabel"> 
-                                             <h3  class="ms-standardheader"> 
-                                                 <nobr>Anonymous Reporting<span class="ms-formvalidation"> *</span></nobr> 
-                                             </h3> 
-                                         </td>
-                                         <td  width="400px"  valign="top"  class="ms-formbody"> 
-                                             <SharePoint:FormField  runat="server"  ID="field_AnonymousReporting"  ControlMode="New"  FieldName="AnonymousReporting" /> 
-                                             <SharePoint:FieldDescription  runat="server"  ID="field_AnonymousReporting_Description"  FieldName="AnonymousReporting" /> 
-                                         </td>
-                                     </tr> 
                                          
                                      <tr id="loggedByRow" class="anonymousSubmission">
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
@@ -209,7 +198,7 @@
                                      <tr>
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
-                                                 <nobr>Location, Vehicle and/or Equipment Referenced</nobr> 
+                                                 <nobr>Location, Vehicle and/or Equipment Referenced<span class="ms-formvalidation"> *</span></nobr> 
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
@@ -253,7 +242,7 @@
                                      <tr>
                                          <td  width="190px"  valign="top"  class="ms-formlabel"> 
                                              <h3  class="ms-standardheader"> 
-                                                 <nobr>Resolution Status<span  class="ms-formvalidation">  *</span></nobr> 
+                                                 <nobr>Resolution Status</nobr> 
                                              </h3> 
                                          </td>
                                          <td  width="400px"  valign="top"  class="ms-formbody"> 
@@ -294,6 +283,17 @@
                                              <SharePoint:FieldDescription  runat="server"  ID="field_AGM_Description"  FieldName="AGM"  /> 
                                          </td>
                                      </tr>
+                                     <tr>
+                                         <td  width="190px"  valign="top"  class="ms-formlabel"> 
+                                             <h3  class="ms-standardheader"> 
+                                                 <nobr>Anonymous Reporting<span class="ms-formvalidation"> *</span></nobr> 
+                                             </h3> 
+                                         </td>
+                                         <td  width="400px"  valign="top"  class="ms-formbody"> 
+                                             <SharePoint:FormField  runat="server"  ID="field_AnonymousReporting"  ControlMode="New"  FieldName="AnonymousReporting" /> 
+                                             <SharePoint:FieldDescription  runat="server"  ID="field_AnonymousReporting_Description"  FieldName="AnonymousReporting" /> 
+                                         </td>
+                                     </tr> 
                                      
               </div>
                                      

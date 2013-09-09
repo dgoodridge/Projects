@@ -34,7 +34,8 @@ namespace SafetyFirstWF.SafetyFirstSqtWF
                 SPListItem currentItem = workflowProperties.Item;
 
                 string resolutionStatus = (string)currentItem["Resolution Status"];
-
+                string loggedBy = (string)currentItem["Logged By"];
+                
             }
         }
     }
