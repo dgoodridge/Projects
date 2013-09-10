@@ -72,10 +72,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Features\Feature1\Feature1.feature">
-      <FeatureId>{932cf683-db29-4e6c-99b0-ea272e699499}</FeatureId>
-    </None>
-    <None Include="Features\Feature2\Feature2.feature">
+    <None Include="Features\SafetyFirstWFFeature\SafetyFirstWFFeature.feature">
       <FeatureId>{47715ce7-1766-4d30-bccc-de4fd99b510c}</FeatureId>
     </None>
     <None Include="key.snk" />
@@ -91,11 +88,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
-    </Content>
-    <Content Include="Features\Feature2\Feature2.Template.xml">
-      <DependentUpon>Feature2.feature</DependentUpon>
+    <Content Include="Features\SafetyFirstWFFeature\SafetyFirstWFFeature.Template.xml">
+      <DependentUpon>SafetyFirstWFFeature.feature</DependentUpon>
     </Content>
     <Content Include="SafetyFirstSqtWF\Elements.xml" />
   </ItemGroup>

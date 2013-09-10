@@ -1,2 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4bdebb52-4ff0-4f46-8bb5-3bd847a59e22" featureId="4bdebb52-4ff0-4f46-8bb5-3bd847a59e22" imageUrl="" solutionId="00000000-0000-0000-0000-000000000000" title="SafetyFirstWF Feature1" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel" />

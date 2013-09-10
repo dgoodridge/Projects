@@ -17,81 +17,15 @@ namespace SafetyFirstForm.Safety_First_Report.Safety_First_Report_Instance.Safet
         public override void ItemAdded(SPItemEventProperties properties)
         {
             base.ItemAdded(properties);
-            int addBusinessDays = 0;
-            DateTime startDate = DateTime.Now;
-            DateTime dueDate;
-            if (addBusinessDays == 3)
-            {
-                switch (startDate.DayOfWeek)
-                {
-                    case DayOfWeek.Monday:
-                    case DayOfWeek.Tuesday:
-                        dueDate = startDate.AddDays(3);
-                        break;
-                    case DayOfWeek.Wednesday:
-                    case DayOfWeek.Thursday:
-                    case DayOfWeek.Friday:
-                    case DayOfWeek.Saturday:
-                        dueDate = startDate.AddDays(5);
-                        break;
-                    case DayOfWeek.Sunday:
-                        dueDate = startDate.AddDays(4);
-                        break;
-                }
-            }
-            else if (addBusinessDays == 5)
-                switch (startDate.DayOfWeek)
-                {
-                    case DayOfWeek.Monday:
-                    case DayOfWeek.Tuesday:
-                    case DayOfWeek.Wednesday:
-                    case DayOfWeek.Thursday:
-                    case DayOfWeek.Friday:
-                        dueDate = startDate.AddDays(7);
-                        break;
-                    case DayOfWeek.Saturday:
-                        dueDate = startDate.AddDays(6);
-                        break;
-                    case DayOfWeek.Sunday:
-                        dueDate = startDate.AddDays(5);
-                        break;
-                }
-            else if (addBusinessDays == 20)
-                switch (startDate.DayOfWeek)
-                {
-                    case DayOfWeek.Monday:
-                    case DayOfWeek.Tuesday:
-                    case DayOfWeek.Wednesday:
-                    case DayOfWeek.Thursday:
-                    case DayOfWeek.Friday:
-                        dueDate = startDate.AddDays(35);
-                        break;
-                    case DayOfWeek.Saturday:
-                        dueDate = startDate.AddDays(37);
-                        break;
-                    case DayOfWeek.Sunday:
-                        dueDate = startDate.AddDays(36);
-                        break;
+            string today = DateTime.Today.DayOfWeek.ToString().ToLower();
 
-                }
-            else if (addBusinessDays == 30)
-                switch (startDate.DayOfWeek)
-                {
-                    case DayOfWeek.Monday:
-                    case DayOfWeek.Tuesday:
-                    case DayOfWeek.Wednesday:
-                    case DayOfWeek.Thursday:
-                    case DayOfWeek.Friday:
-                        dueDate = startDate.AddDays(42);
-                        break;
-                    case DayOfWeek.Saturday:
-                        dueDate = startDate.AddDays(41);
-                        break;
-                    case DayOfWeek.Sunday:
-                        dueDate = startDate.AddDays(40);
-                        break;
-                    
-                }
+            
+
+            SPListItem item = properties.ListItem;
+            item["SupervisorResponseDate"] = GetBusinessDays(DateTime.Today, 3);
+            item.Update();
+
+
         }
 
         /// <summary>
@@ -102,6 +36,45 @@ namespace SafetyFirstForm.Safety_First_Report.Safety_First_Report_Instance.Safet
             base.ItemUpdated(properties);
         }
 
-
+        private DateTime GetBusinessDays(DateTime fromDate, int numberOfBusinessDays)
+        {
+            if (numberOfBusinessDays == 3)
+            {
+                switch (fromDate.DayOfWeek.ToString().ToLower())
+                {
+                    case "sunday":
+                    case "monday":
+                    case "tuesday":
+                        fromDate = DateTime.Today.AddDays(3).AddHours(17);
+                        break;
+                    case "wednesday":
+                    case "thursday":
+                    case "friday":
+                    case "saturday":
+                        fromDate = DateTime.Today.AddDays(5).AddHours(17);
+                        break;
+                }
+            }
+            else if (numberOfBusinessDays == 5)
+            {
+                switch (fromDate.DayOfWeek.ToString().ToLower())
+                {
+                    case "monday":
+                    case "tuesday":
+                    case "wednesday":
+                    case "thursday":
+                    case "friday":
+                        fromDate = DateTime.Today.AddDays(7).AddHours(17);
+                        break;
+                    case "saturday":
+                        fromDate = DateTime.Today.AddDays(6).AddHours(17);
+                        break;
+                    case "sunday":
+                        fromDate = DateTime.Today.AddDays(5).AddHours(17);
+                        break;
+                }
+            }
+            return fromDate;
+        }
     }
 }

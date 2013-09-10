@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="019b3359-7ff1-4944-b1d8-c3553d90df38" solutionId="019b3359-7ff1-4944-b1d8-c3553d90df38" resetWebServer="false" sharePointProductVersion="15.0" name="SafetyFirstWF" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <features>
-    <featureReference itemId="932cf683-db29-4e6c-99b0-ea272e699499" />
     <featureReference itemId="47715ce7-1766-4d30-bccc-de4fd99b510c" />
   </features>
 </package>
