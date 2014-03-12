@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="ELC Directory" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/ELC Directory" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+
+
+      
+      
+    <ContentType ID="0x01005a17749eb33b4ffca3107e3015a6ec0a" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{4a722dd4-d406-4356-93f9-2550b8f50dd0}" Name="FirstName" /><FieldRef ID="{418C8D29-6F2E-44c3-8955-2CD7EC3E2151}" Name="MiddleName" /><FieldRef ID="{d7c3bebe-fc77-492a-93be-d54d54aa0c10}" Name="LastName" /><FieldRef ID="{475c2610-c157-4b91-9e2d-6855031b3538}" Name="FullName" /><FieldRef ID="{c10a52bc-58e0-473a-a204-6c2431ffc105}" Name="al" /><FieldRef ID="{C4C7D925-BC1B-4f37-826D-AC49B4FB1BC1}" Name="Birthday" /><FieldRef ID="{2268701b-979d-4872-84b6-cdf4e5ffe0ab}" Name="Unit" /><FieldRef ID="{6ac721e5-8dd3-4b79-8e47-7b8a7c5ca302}" Name="Status" /></FieldRefs></ContentType><ContentType ID="0x010600D0C9D6D5DCAF4016A1B0197E61FE34AE" Name="ELCDirectory" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+        <FieldRefs><FieldRef ID="{d7c3bebe-fc77-492a-93be-d54d54aa0c10}" DisplayName="Last Name" Required="FALSE" Name="LastName" /><FieldRef ID="{418C8D29-6F2E-44c3-8955-2CD7EC3E2151}" DisplayName="$Resources:core,Middle_Name_OL;" Name="MiddleName" Sealed="TRUE" /><FieldRef ID="{C4C7D925-BC1B-4f37-826D-AC49B4FB1BC1}" DisplayName="$Resources:core,Birthday_OL;" Name="Birthday" Format="DateOnly" Sealed="TRUE" /><FieldRef ID="{2268701b-979d-4872-84b6-cdf4e5ffe0ab}" DisplayName="Unit" Required="FALSE" Name="Unit" /></FieldRefs>
+      </ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{4a722dd4-d406-4356-93f9-2550b8f50dd0}" Name="FirstName" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FirstName" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,First_Name;" Type="Text" /><Field ID="{418C8D29-6F2E-44c3-8955-2CD7EC3E2151}" Name="MiddleName" StaticName="MiddleName" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplayName="$Resources:core,Middle_Name_OL;" Group="$Resources:core,Person_Event_Columns;" Type="Text" Sealed="TRUE" AllowDeletion="TRUE" /><Field ID="{d7c3bebe-fc77-492a-93be-d54d54aa0c10}" Name="LastName" DisplayName="Last Name" Type="Text" Required="FALSE" Group="ELC Site Columns"></Field><Field ID="{475c2610-c157-4b91-9e2d-6855031b3538}" Name="FullName" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FullName" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,Full_Name;" Type="Text" /><Field Name="al" ID="{c10a52bc-58e0-473a-a204-6c2431ffc105}" DisplayName="Friends Call Me" Type="Text" /><Field ID="{C4C7D925-BC1B-4f37-826D-AC49B4FB1BC1}" Name="Birthday" StaticName="Birthday" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplayName="$Resources:core,Birthday_OL;" Group="$Resources:core,Person_Event_Columns;" Type="DateTime" Format="DateOnly" Sealed="TRUE" AllowDeletion="TRUE" /><Field ID="{2268701b-979d-4872-84b6-cdf4e5ffe0ab}" Name="Unit" DisplayName="Unit" Type="Lookup" Required="FALSE" Group="ELC Site Columns" List="Lists/Unit" ShowField="Title"></Field><Field ID="{6ac721e5-8dd3-4b79-8e47-7b8a7c5ca302}" Name="Status" DisplayName="Status" Type="Choice" Required="FALSE" Group="ELC Site Columns"><CHOICES><CHOICE>Resident</CHOICE><CHOICE>Certified Resident</CHOICE><CHOICE>Owner</CHOICE><CHOICE>Dependent</CHOICE><CHOICE>Non-Resident Owner</CHOICE></CHOICES><Default></Default></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="FirstName" /><FieldRef Name="MiddleName" /><FieldRef Name="LastName" /><FieldRef Name="FullName" /><FieldRef Name="al" /><FieldRef Name="Birthday" /><FieldRef Name="Unit" /><FieldRef Name="Status" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

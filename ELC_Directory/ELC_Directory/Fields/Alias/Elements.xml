@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{25241d41-e6f4-4566-acbb-4a6146251bf7}"
+       Name="Alias"
+       DisplayName="Friends Call Me"
+       Type="Text"
+       Required="FALSE"
+       Group="ELC Site Columns">
+  </Field>
+</Elements>

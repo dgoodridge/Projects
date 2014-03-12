@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6ac721e5-8dd3-4b79-8e47-7b8a7c5ca302}"
+       Name="Status"
+       DisplayName="Status"
+       Type="Choice"
+       Required="FALSE"
+       Group="ELC Site Columns">
+    <CHOICES>
+      <CHOICE>Resident</CHOICE>
+      <CHOICE>Certified Resident</CHOICE>
+      <CHOICE>Owner</CHOICE>
+      <CHOICE>Dependent</CHOICE>
+      <CHOICE>Non-Resident Owner</CHOICE>
+    </CHOICES>
+    <Default></Default>
+  </Field>
+</Elements>

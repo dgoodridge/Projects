@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{280C8264-B06D-43EB-A9F6-DA490CEAAE4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ELC_Directory</RootNamespace>
+    <AssemblyName>ELC_Directory</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ELC Directory\ELC Directory Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7d71ad5c-4c7e-4d50-8f1b-0920cdb0dc59}</SharePointProjectItemId>
+    </None>
+    <None Include="ELC Directory\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4d5609e0-f348-41a4-b55d-be4164782784}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\DirectoryLists\DirectoryLists.feature">
+      <FeatureId>{22f72c5c-0eec-4b8e-afaa-4a0eb6d595ed}</FeatureId>
+    </None>
+    <None Include="Fields\Status\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a43f60a6-af28-4617-8cf6-f1ae92055242}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\DirectoryFields\DirectoryFields.feature">
+      <FeatureId>{73b89e06-45bd-427f-a827-0d8c2f159674}</FeatureId>
+    </None>
+    <None Include="ELCDirectory\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e71c6828-26bd-4b27-8e91-3e90bbfe5d92}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Alias\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f751003a-4de5-4238-a751-e823c4ae1a4c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\LastName\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9b9bc9f6-8fd3-4fe6-a5bb-0a7586c79e66}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Unit\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{099d340c-8860-4069-a633-a9eb16242373}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{f20fea6d-428a-4945-8224-7052ff428b88}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Unit\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7d8b1957-2b5a-4e57-98ee-67da12c5a50a}</SharePointProjectItemId>
+    </None>
+    <None Include="Unit\UnitInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e46ae33f-dc2e-400d-b40f-8d1d1aff0678}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ELC Directory\ELC Directory Instance\Elements.xml" />
+    <Content Include="ELC Directory\Elements.xml" />
+    <Content Include="ELC Directory\Schema.xml" />
+    <Content Include="Features\DirectoryLists\DirectoryLists.Template.xml">
+      <DependentUpon>DirectoryLists.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\Status\Elements.xml" />
+    <Content Include="Features\DirectoryFields\DirectoryFields.Template.xml">
+      <DependentUpon>DirectoryFields.feature</DependentUpon>
+    </Content>
+    <Content Include="ELCDirectory\Elements.xml" />
+    <Content Include="Fields\Alias\Elements.xml" />
+    <Content Include="Fields\LastName\Elements.xml" />
+    <Content Include="Fields\Unit\Elements.xml" />
+    <Content Include="Unit\Elements.xml" />
+    <Content Include="Unit\Schema.xml" />
+    <Content Include="Unit\UnitInstance\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

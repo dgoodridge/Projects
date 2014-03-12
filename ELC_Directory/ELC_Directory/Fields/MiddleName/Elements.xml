@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{ea939ebb-e5f1-4a43-b17b-750bf1a10880}"
+       Name="MiddleName"
+       DisplayName="Middle Name"
+       Type="Text"
+       Required="FALSE"
+       Group="ELC Site Columns">
+  </Field>
+</Elements>

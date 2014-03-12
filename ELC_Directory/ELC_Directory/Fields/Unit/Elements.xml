@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{2268701b-979d-4872-84b6-cdf4e5ffe0ab}"
+       Name="Unit"
+       DisplayName="Unit"
+       Type="Lookup"
+       Required="FALSE"
+       Group="ELC Site Columns"
+       List="Lists/Unit"
+       ShowField="Title">
+  </Field>
+</Elements>

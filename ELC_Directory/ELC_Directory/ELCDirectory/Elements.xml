@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Contact (0x0106) -->
+  <ContentType ID="0x010600D0C9D6D5DCAF4016A1B0197E61FE34AE" Name="ELCDirectory" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{d7c3bebe-fc77-492a-93be-d54d54aa0c10}" DisplayName="Last Name" Required="FALSE" Name="LastName" />
+      <FieldRef ID="{418C8D29-6F2E-44c3-8955-2CD7EC3E2151}" DisplayName="$Resources:core,Middle_Name_OL;" Name="MiddleName" Sealed="TRUE" />
+      <FieldRef ID="{C4C7D925-BC1B-4f37-826D-AC49B4FB1BC1}" DisplayName="$Resources:core,Birthday_OL;" Name="Birthday" Format="DateOnly" Sealed="TRUE" />
+      <FieldRef ID="{2268701b-979d-4872-84b6-cdf4e5ffe0ab}" DisplayName="Unit" Required="FALSE" Name="Unit" />
+    </FieldRefs>
+  </ContentType>
+</Elements>
