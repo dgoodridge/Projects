@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="8caa5c11-0658-4f0e-a517-c8023c230d8f" solutionId="8caa5c11-0658-4f0e-a517-c8023c230d8f" resetWebServer="false" sharePointProductVersion="15.0" name="ManagementReports" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="28e8768c-418a-4860-99ec-f897ca98762b" />
+  </features>
+</package>

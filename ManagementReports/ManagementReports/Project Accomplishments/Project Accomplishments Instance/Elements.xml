@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Project Accomplishments" 
+                OnQuickLaunch="TRUE" 
+                TemplateType="11004" 
+                Url="Lists/Accomplishments" 
+                Description="Current Project Accomplishments">
+    
+  </ListInstance>
+</Elements>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{D26F91FC-2167-4BD9-BF40-EFDF83B91456}"
+         Type="DateTime"
+         Group="MARTA Columns"
+         DisplayName="Date"
+         Name="AccomplishmentDate" />
+</Elements>

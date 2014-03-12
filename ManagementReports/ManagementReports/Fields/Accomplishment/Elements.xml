@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{CBB765D0-B751-4164-AF5B-5475CCBDCDD3}"
+         Type="Note"
+         Group="MARTA Columns"
+         DisplayName="Accomplishment"
+         Name="Accomplishment" />
+</Elements>

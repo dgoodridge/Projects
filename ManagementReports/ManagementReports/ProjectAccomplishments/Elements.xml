@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100875EA02E22954119A47FD9FB01B60837" Name="ProjectAccomplishments" Group="MARTA Content Types" Description="Project Accomplishments for the CAO and GM Reports" Inherits="FALSE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{CBB765D0-B751-4164-AF5B-5475CCBDCDD3}" DisplayName="Accomplishment" Name="Accomplishment" />
+      <FieldRef ID="{D26F91FC-2167-4BD9-BF40-EFDF83B91456}" DisplayName="Date" Name="AccomplishmentDate" />
+      <FieldRef ID="{6F74C623-E7D8-4C90-B3C3-419AC8C0D456}" DisplayName="Project Manager" Name="ProjectManager" />
+      <FieldRef ID="{9AE92447-D484-428E-B42C-20EF28E1FD21}" DisplayName="Add to CAO Report" Name="CAOReportAdd" ShowInNewForm="FALSE" />
+      <FieldRef ID="{A6DE2F8B-8BF9-401B-92AD-2106229C3C7A}" DisplayName="Add to GM Report" Name="GMReportAdd" ShowInNewForm="FALSE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

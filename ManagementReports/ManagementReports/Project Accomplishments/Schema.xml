@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Project Accomplishments" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Project Accomplishments" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+    <ContentType ID="0x0100c81f532c22234ac5a54fe9d9d3c0c909" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{CBB765D0-B751-4164-AF5B-5475CCBDCDD3}" Name="Accomplishment" /><FieldRef ID="{D26F91FC-2167-4BD9-BF40-EFDF83B91456}" Name="AccomplishmentDate" /><FieldRef ID="{6F74C623-E7D8-4C90-B3C3-419AC8C0D456}" Name="ProjectManager" /><FieldRef ID="{9AE92447-D484-428E-B42C-20EF28E1FD21}" Name="CAOReportAdd" /><FieldRef ID="{A6DE2F8B-8BF9-401B-92AD-2106229C3C7A}" Name="GMReportAdd" /></FieldRefs></ContentType><ContentType ID="0x0100875EA02E22954119A47FD9FB01B60837" Name="ProjectAccomplishments" Group="MARTA Content Types" Description="Project Accomplishments for the CAO and GM Reports" Inherits="FALSE" Version="0"><FieldRefs><FieldRef ID="{CBB765D0-B751-4164-AF5B-5475CCBDCDD3}" DisplayName="Accomplishment" Name="Accomplishment" /><FieldRef ID="{D26F91FC-2167-4BD9-BF40-EFDF83B91456}" DisplayName="Date" Name="AccomplishmentDate" /><FieldRef ID="{6F74C623-E7D8-4C90-B3C3-419AC8C0D456}" DisplayName="Project Manager" Name="ProjectManager" /><FieldRef ID="{9AE92447-D484-428E-B42C-20EF28E1FD21}" DisplayName="Add to CAO Report" Name="CAOReportAdd" ShowInNewForm="FALSE" /><FieldRef ID="{A6DE2F8B-8BF9-401B-92AD-2106229C3C7A}" DisplayName="Add to GM Report" Name="GMReportAdd" ShowInNewForm="FALSE" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" 
+           Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{CBB765D0-B751-4164-AF5B-5475CCBDCDD3}" Type="Note" Group="MARTA Columns" DisplayName="Accomplishment" Name="Accomplishment" Required="TRUE" /><Field ID="{D26F91FC-2167-4BD9-BF40-EFDF83B91456}" Type="DateTime" Group="MARTA Columns" DisplayName="Date" Name="AccomplishmentDate" Required="TRUE" /><Field ID="{6F74C623-E7D8-4C90-B3C3-419AC8C0D456}" Type="User" Group="MARTA Columns" DisplayName="Project Manager" Name="ProjectManager" Required="TRUE" /><Field ID="{9AE92447-D484-428E-B42C-20EF28E1FD21}" Type="Boolean" Group="MARTA Columns" DisplayName="Add to CAO Report" Name="CAOReportAdd" ShowInNewForm="FALSE" /><Field ID="{A6DE2F8B-8BF9-401B-92AD-2106229C3C7A}" Type="Boolean" Group="MARTA Columns" DisplayName="Add to GM Report" Name="GMReportAdd" ShowInNewForm="FALSE" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx" ReadOnly="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Accomplishment" /><FieldRef Name="AccomplishmentDate" /><FieldRef Name="ProjectManager" /><FieldRef Name="CAOReportAdd" /><FieldRef Name="GMReportAdd" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

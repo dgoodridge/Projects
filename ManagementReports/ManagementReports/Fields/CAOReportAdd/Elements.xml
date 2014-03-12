@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{9AE92447-D484-428E-B42C-20EF28E1FD21}"
+         Type="Boolean"
+         Group="MARTA Columns"
+         DisplayName="Add to CAO Report"
+         Name="CAOReportAdd"
+         ShowInNewForm="FALSE"/>
+</Elements>

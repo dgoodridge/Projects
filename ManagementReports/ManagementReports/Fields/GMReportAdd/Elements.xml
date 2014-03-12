@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{A6DE2F8B-8BF9-401B-92AD-2106229C3C7A}"
+         Type="Boolean"
+         Group="MARTA Columns"
+         DisplayName="Add to GM Report"
+         Name="GMReportAdd" 
+         ShowInNewForm="FALSE"/>
+</Elements>
